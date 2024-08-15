@@ -21,10 +21,10 @@ repository               : "abirharrasse/abirharrasse.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Abir HARRASSR"
+  avatar           : "images/photo_abir.jpeg"
+  name             : "Abir HARRASSE"
   pronouns         : # example: "she/her"  
-  bio              : "Engineering Student at EMINES-School Of Industrial Management| Aspiring to develop next-generation reasoning algorithms| Advocate for equitable access to knowledge and science promotion"
+  bio              : "Engineering Student@EMINES| Aspiring to develop next-generation reasoning algorithms"
   location         : "UM6P-Benguerir"
   employer         : "Mohammed VI Polytechnic University"
   uri              : # URL
