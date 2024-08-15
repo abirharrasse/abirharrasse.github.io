@@ -21,7 +21,7 @@ repository               : "abirharrasse/abirharrasse.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/photo_abir.jpeg"
+  avatar           : "https://abirharrasse.github.io/images/photo_abir.jpeg"
   name             : "Abir HARRASSE"
   pronouns         : # example: "she/her"  
   bio              : "Engineering Student@EMINES| Aspiring to develop next-generation reasoning algorithms"
