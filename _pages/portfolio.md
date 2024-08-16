@@ -4,12 +4,15 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
+
+<h1 style="text-align: center;">Portfolio</h1>
+
 ## Participations
 
-<div style="margin-bottom: 30px;">
+<div style="margin-bottom: 50px;">
   <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
   <div style="display: flex; align-items: flex-start;">
-    <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Hackathon Participation" style="width: 200px; height: 200px; object-fit: cover; margin-right: 20px;">
+    <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Hackathon Participation" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
     <div>
       <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
       <p style="font-size: 14px;">A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
@@ -19,10 +22,10 @@ author_profile: true
   </div>
 </div>
 
-<div style="margin-bottom: 30px;">
+<div style="margin-bottom: 50px;">
   <h3>IoT&AI Challenge: Sehhatech</h3>
   <div style="display: flex; align-items: flex-start;">
-    <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="Sehhatech Project" style="width: 200px; height: 200px; object-fit: cover; margin-right: 20px;">
+    <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="Sehhatech Project" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
     <div>
       <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</p>
       <p style="font-size: 14px;"><strong>Sehhatech</strong> is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</p>
