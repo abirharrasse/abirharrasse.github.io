@@ -20,21 +20,12 @@ author_profile: true
 
 
 <div style="display: flex; margin-bottom: 20px; align-items: stretch;">
-  <img src="URL_to_project_image_2" alt="Project 2 Icon" style="width: 200px; object-fit: cover; margin-right: 20px;">
+  <img src="https://github.com/abirharrasse/abirharrasse.github.io/images/Iot&AI challenge.JPG" alt="Sehhatech Project" style="width: 200px; object-fit: cover; margin-right: 20px;">
   <div style="display: flex; flex-direction: column; justify-content: space-between;">
-    <h3>Project Title 2</h3>
-    <p><strong>People Involved:</strong> <a href="link_to_person_1">Person 1</a>, <a href="link_to_person_2">Person 2</a></p>
-    <p><strong>Description:</strong> Brief description of the project goes here. Include relevant details and context.</p>
-    <a href="URL_to_project_2">Link to Project</a>
-  </div>
-</div>
-
-<div style="display: flex; margin-bottom: 20px; align-items: stretch;">
-  <img src="URL_to_project_image_3" alt="Project 3 Icon" style="width: 200px; object-fit: cover; margin-right: 20px;">
-  <div style="display: flex; flex-direction: column; justify-content: space-between;">
-    <h3>Project Title 3</h3>
-    <p><strong>People Involved:</strong> <a href="link_to_person_1">Person 1</a>, <a href="link_to_person_2">Person 2</a></p>
-    <p><strong>Description:</strong> Brief description of the project goes here. Include relevant details and context.</p>
-    <a href="URL_to_project_3">Link to Project</a>
+    <h3>IoT&AI Challenge: Sehhatech</h3>
+    <p><small><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</small></p>
+    <p><small>**SehhaTech** is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</small></p>
+    <p><small><em>Finalist at IoT&AI Challenge</em></small></p>
+    <a href="[https://github.com/abirharrasse/abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf](https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)">[Presentation and code]</a>
   </div>
 </div>
