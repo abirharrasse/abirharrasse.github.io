@@ -1,90 +1,36 @@
 ---
 layout: archive
+title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
 
-<style>
-  .portfolio {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+<h1 style="text-align: center;">Portfolio</h1>
 
-  h2 {
-    text-align: left;
-    margin-bottom: 20px;
-  }
+## Participations
 
-  .participation {
-    display: flex;
-    margin-bottom: 40px;
-    align-items: flex-start;
-  }
-
-  .participation-image {
-    width: 150px;
-    height: 150px;
-    background-color: #f0f0f0;
-    margin-right: 20px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #666;
-    text-align: center;
-  }
-
-  .participation-content {
-    flex: 1;
-  }
-
-  .participation h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .team-members {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-
-  .view-presentation {
-    color: #0066cc;
-    text-decoration: none;
-  }
-
-  .view-presentation:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<div class="portfolio">
-  <h2>Participations</h2>
-
-  <div class="participation">
-    <div class="participation-image">
-      [BCG Platinion Hackathon image placeholder]
-    </div>
-    <div class="participation-content">
-      <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
-      <p class="team-members">Abir HARRASSE, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
-      <p>A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
-      <p><strong>First place nationally. Second place internationally.</strong></p>
-      <a href="#" class="view-presentation">[View Presentation]</a>
+<div style="margin-bottom: 50px;">
+  <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
+  <div style="display: flex; align-items: flex-start;">
+    <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Hackathon Participation" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
+    <div>
+      <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
+      <p style="font-size: 14px;">A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
+      <p style="font-size: 14px;"><em><strong>First place nationally. Second place internationally.</strong></em></p>
+      <a href="https://abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf" target="_blank">[View Presentation]</a>
     </div>
   </div>
+</div>
 
-  <div class="participation">
-    <div class="participation-image">
-      [IoT&AI Challenge image placeholder]
-    </div>
-    <div class="participation-content">
-      <h3>IoT&AI Challenge: Sehhatech</h3>
-      <p class="team-members">Abir HARRASSE, Yassmine ED-DYB, Soufiane Dahimi</p>
-      <p>Sehhatech is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</p>
-      <p><strong>Finalist at IoT&AI Challenge</strong></p>
+<div style="margin-bottom: 50px;">
+  <h3>IoT&AI Challenge: Sehhatech</h3>
+  <div style="display: flex; align-items: flex-start;">
+    <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="Sehhatech Project" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
+    <div>
+      <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</p>
+      <p style="font-size: 14px;"><strong>Sehhatech</strong> is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</p>
+      <p style="font-size: 14px;"><em><strong>Finalist at IoT&AI Challenge</strong></em></p>
+      <a href="https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech" target="_blank">[Presentation and Code]</a>
     </div>
   </div>
 </div>
