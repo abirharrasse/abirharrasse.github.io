@@ -18,7 +18,7 @@ author_profile: true
 
   .participation {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     align-items: flex-start;
   }
 
