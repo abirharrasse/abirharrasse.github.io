@@ -15,9 +15,10 @@ Currently, I'm interning at [NUS-IORA](https://iora.nus.edu.sg/) under the super
 I maintain a blog where I share my insights on AI, and I actively participate in hackathons to craft innovative AI solutions. I won’t lie, I get a real thrill from winning them 😄.
 
 
-## Recent news:
--🚀 June 2024: I started my internship at NUS. I will be working on new ways of evaluating LLMs with [Chaithanya Bandi](https://iora.nus.edu.sg/people-p/bandi-chaithanya/).
+### Recent news:
+- 🚀 June 2024: I started my **internship** at NUS. I will be working on new ways of evaluating LLMs with [Chaithanya Bandi](https://iora.nus.edu.sg/people-p/bandi-chaithanya/).
 
--🎉 April 2024: We're thrilled with the overwhelming success of the first edition of the Moroccan Day of Mathematics. It’s incredibly rewarding to see an event I co-founded make such a meaningful impact.  
+- 🎉 April 2024: We're thrilled with the overwhelming success of the first edition of the [**Moroccan Day of Mathematics**](https://www.youtube.com/watch?v=3RsTD8BXCfQ). It’s incredibly rewarding to see an event I co-founded make such a meaningful impact.  
 
--
+- 🌟 March 2024: [The Winter School](https://midas.centrale-casablanca.net/winter-school-2024-generative-ai/index.html) featuring prominent AI researchers like Yann LeCun and Eric Xing and that I proudly coorganized took place.
+- 🏆 October 2023: I had the pleasure of participating in the [BCG Platinion Hackathon](https://www.bcgplatinion.com/blog/bcg-platinion-hackathon-aftermovie-2023) and winning first place. Our solution addresses a major aspect of mobility for grocery stores and also functions as a collaborative, optimized platform for emergencies. The idea was inspired by the need for better coordination in the recent earthquake relief efforts in Morocco. 
