@@ -35,11 +35,13 @@ author_profile: true
     align-items: center;
   }
 
-  .participation-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.participation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast; /* For webkit browsers */
+  image-rendering: crisp-edges; /* For other browsers */
+}
 
   .participation-content {
     flex: 1;
