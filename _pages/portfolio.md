@@ -103,4 +103,5 @@ author_profile: true
       <a href="https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech" class="view-presentation" target="_blank">[Presentation and Code]</a>
     </div>
   </div>
+    <h2>Projects</h2>
 </div>
