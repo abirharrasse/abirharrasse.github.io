@@ -30,6 +30,15 @@ author_profile: true
     background-color: #f0f0f0;
     margin-right: 20px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .participation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .participation-content {
@@ -61,7 +70,7 @@ author_profile: true
 
   <div class="participation">
     <div class="participation-image">
-      <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Platinion Hackathon" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Platinion Hackathon">
     </div>
     <div class="participation-content">
       <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
@@ -74,7 +83,7 @@ author_profile: true
 
   <div class="participation">
     <div class="participation-image">
-      <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="IoT&AI Challenge: Sehhatech" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="IoT&AI Challenge: Sehhatech">
     </div>
     <div class="participation-content">
       <h3>IoT&AI Challenge: Sehhatech</h3>
