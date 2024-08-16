@@ -28,12 +28,6 @@ author_profile: true
     background-color: #f0f0f0;
     margin-right: 20px;
     flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #666;
-    text-align: center;
   }
 
   .participation-content {
@@ -65,7 +59,7 @@ author_profile: true
 
   <div class="participation">
     <div class="participation-image">
-      [BCG Platinion Hackathon image placeholder]
+      <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Platinion Hackathon" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div class="participation-content">
       <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
@@ -78,13 +72,14 @@ author_profile: true
 
   <div class="participation">
     <div class="participation-image">
-      [IoT&AI Challenge image placeholder]
+      <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="IoT&AI Challenge: Sehhatech" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div class="participation-content">
       <h3>IoT&AI Challenge: Sehhatech</h3>
       <p class="team-members">Abir HARRASSE, Yassmine ED-DYB, Soufiane Dahimi</p>
       <p>Sehhatech is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</p>
       <p><strong>Finalist at IoT&AI Challenge</strong></p>
+      <a href="https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech" class="view-presentation" target="_blank">[Presentation and Code]</a>
     </div>
   </div>
 </div>
