@@ -27,6 +27,6 @@ author_profile: true
     <p><small><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</small></p>
     <p><small><strong>Sehhatech</strong> is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</small></p>
     <p><small><em><strong>Finalist at IoT&AI Challenge</strong></em></small></p>
-    <a href="[https://github.com/abirharrasse/abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf](https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)">[Presentation and code]</a>
+    <a href="[(https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)](https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)">[Presentation and code]</a>
   </div>
 </div>
