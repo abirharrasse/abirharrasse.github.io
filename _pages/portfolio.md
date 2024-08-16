@@ -10,7 +10,7 @@ author_profile: true
 ## Projects
 
 <div style="display: flex; margin-bottom: 20px;">
-  <img src="URL_to_project_image_1" alt="Project 1 Icon" style="width: 150px; height: 100px; object-fit: cover; margin-right: 20px;">
+  <img src="[URL_to_project_image_1](https://abirharrasse.github.io/images/photo_abir.jpeg)" alt="Project 1 Icon" style="width: 150px; height: 100px; object-fit: cover; margin-right: 20px;">
   <div>
     <h3>Project Title 1</h3>
     <p><strong>People Involved:</strong> <a href="link_to_person_1">Person 1</a>, <a href="link_to_person_2">Person 2</a></p>
