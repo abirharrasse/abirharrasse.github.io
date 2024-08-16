@@ -1,8 +1,3 @@
----
-layout: archive
-permalink: /portfolio/
-author_profile: true
----
 <style>
   .portfolio {
     font-family: Arial, sans-serif;
@@ -10,22 +5,29 @@ author_profile: true
     margin: 0 auto;
   }
 
-  h1, h2 {
+  h2 {
     text-align: left;
+    margin-bottom: 20px;
   }
 
   .participation {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     align-items: flex-start;
   }
 
-  .participation img {
+  .participation-image {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    background-color: #f0f0f0;
     margin-right: 20px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
   }
 
   .participation-content {
@@ -53,11 +55,12 @@ author_profile: true
 </style>
 
 <div class="portfolio">
-  <h1>Portfolio</h1>
   <h2>Participations</h2>
 
   <div class="participation">
-    <img src="bcg_hackathon_image.jpg" alt="BCG Platinion Hackathon">
+    <div class="participation-image">
+      [BCG Platinion Hackathon image placeholder]
+    </div>
     <div class="participation-content">
       <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
       <p class="team-members">Abir HARRASSE, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
@@ -68,7 +71,9 @@ author_profile: true
   </div>
 
   <div class="participation">
-    <img src="iot_challenge_image.jpg" alt="IoT&AI Challenge">
+    <div class="participation-image">
+      [IoT&AI Challenge image placeholder]
+    </div>
     <div class="participation-content">
       <h3>IoT&AI Challenge: Sehhatech</h3>
       <p class="team-members">Abir HARRASSE, Yassmine ED-DYB, Soufiane Dahimi</p>
