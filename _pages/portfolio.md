@@ -13,7 +13,8 @@ author_profile: true
 
   h2 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc; /* Adds a thin line */
   }
 
   .participation {
@@ -37,8 +38,7 @@ author_profile: true
 
   .participation h3 {
     margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc; /* Adds a thin line */
+    margin-bottom: 10px;
   }
 
   .team-members {
