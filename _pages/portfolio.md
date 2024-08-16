@@ -1,13 +1,12 @@
 ---
 layout: archive
-title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
 
-<h1 style="text-align: center;">Portfolio</h1>
+<h1 style="text-align: center; margin-bottom: 30px;">Portfolio</h1>
 
-## Participations
+<h2 style="text-align: center;">Participations</h2>
 
 <div style="margin-bottom: 50px;">
   <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
