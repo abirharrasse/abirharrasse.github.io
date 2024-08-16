@@ -18,10 +18,9 @@ author_profile: true
 
   .participation {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     align-items: flex-start;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ccc; /* Adds a thin line */
   }
 
   .participation-image {
@@ -38,7 +37,8 @@ author_profile: true
 
   .participation h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Adds a thin line */
   }
 
   .team-members {
