@@ -3,7 +3,6 @@ layout: archive
 permalink: /portfolio/
 author_profile: true
 ---
-
 <style>
   .portfolio {
     font-family: Arial, sans-serif;
@@ -17,7 +16,7 @@ author_profile: true
 
   .participation {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     align-items: flex-start;
   }
 
@@ -26,6 +25,7 @@ author_profile: true
     height: 150px;
     object-fit: cover;
     margin-right: 20px;
+    flex-shrink: 0;
   }
 
   .participation-content {
@@ -34,6 +34,7 @@ author_profile: true
 
   .participation h3 {
     margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .team-members {
