@@ -20,6 +20,8 @@ author_profile: true
     display: flex;
     margin-bottom: 60px;
     align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Adds a thin line */
   }
 
   .participation-image {
