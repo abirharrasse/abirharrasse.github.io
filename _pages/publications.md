@@ -5,9 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
-**[Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models](https://arxiv.org/abs/2407.18158)** \
-**Sanae Lotfi<sup>\*</sup>**, Yilun Kuang<sup>\*</sup>, Brandon Amos, Micah Goldblum, Marc Finzi, Andrew Gordon Wilson \
-_ICML Workshop on Theoretical Foundations of Foundation Models, 2024_ \
-**Best Paper Award & Oral Presentation** \
-_Under conference review._ \
-[[arxiv](https://arxiv.org/abs/2407.18158)]
+*The publications listed in this section consist of reports and papers produced during my internship experiences.*
+
+
+**[A Comprehensive Study of Assortment Optimization with Substitution and Uncertainty: Introducing a Machine Learning Heuristic]([https://arxiv.org/abs/2407.18158](https://hal.science/hal-04182275))** \
+**Abir HARRASSE<sup>\*</sup>**,Agnès GORGE<sup>\*</sup> \
+**Internship Report** \
+[[hal]([https://arxiv.org/abs/2407.18158](https://hal.science/hal-04182275))]
