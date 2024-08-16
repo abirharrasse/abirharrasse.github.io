@@ -85,7 +85,7 @@ author_profile: true
       <p class="team-members">Abir HARRASSE, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
       <p>A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
       <p><strong>First place nationally. Second place internationally.</strong></p>
-      <a href="#" class="view-presentation">[View Presentation]</a>
+      <a href="https://abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf" target="_blank">[View Presentation]</a>
     </div>
   </div>
 
