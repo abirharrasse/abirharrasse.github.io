@@ -14,7 +14,7 @@ author_profile: true
     <p><strong>Abir HARRASSE</strong>, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
     <p>A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
     <p><em>We secured first place nationally and second place internationally.</em></p>
-    <a href="#https://github.com/abirharrasse/abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf">More details on Libera</a>
+    <a href="#https://github.com/abirharrasse/abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf">[Presentation]</a>
   </div>
 </div>
 
