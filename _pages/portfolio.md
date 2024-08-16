@@ -20,15 +20,14 @@ author_profile: true
 </div>
 
 
-
-
 <div style="display: flex; margin-bottom: 20px; align-items: stretch;">
   <img src="https://abirharrasse.github.io/images/iot_challenge.png" alt="Sehhatech Project" style="width: 200px; object-fit: cover; margin-right: 20px;">
   <div style="display: flex; flex-direction: column; justify-content: space-between;">
     <h3>IoT&AI Challenge: Sehhatech</h3>
-    <p><small><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</small></p>
-    <p><small><strong>Sehhatech</strong> is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</small></p>
-    <p><small><em><strong>Finalist at IoT&AI Challenge</strong></em></small></p>
-    <a href="[(https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)](https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech)">[Presentation and code]</a>
+    <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Yassmine ED-DYB, Soufiane Dahimi</p>
+    <p style="font-size: 14px;"><strong>Sehhatech</strong> is an AI medical assistant that gathers patient info, generates reports, and connects patients to the right specialists, enhancing healthcare efficiency.</p>
+    <p style="font-size: 14px;"><em><strong>Finalist at IoT&AI Challenge</strong></em></p>
+    <a href="https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech" target="_blank">[Presentation and Code]</a>
   </div>
 </div>
+
