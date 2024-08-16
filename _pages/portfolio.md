@@ -15,9 +15,9 @@ author_profile: true
     <p style="font-size: 14px;">A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
     <p style="font-size: 14px;"><em><strong>First place nationally. Second place internationally.</strong></em></p>
     <a href="https://abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf" target="_blank">[View Presentation]</a>
-    <iframe src="https://abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf" width="100%" height="500px" style="margin-top: 20px;"></iframe>
   </div>
 </div>
+
 
 
 <div style="display: flex; margin-bottom: 20px; align-items: stretch;">
