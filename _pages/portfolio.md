@@ -5,7 +5,6 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-<h1 style="text-align: center;">Portfolio</h1>
 
 ## Participations
 
