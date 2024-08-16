@@ -74,7 +74,7 @@ author_profile: true
 </style>
 
 <div class="portfolio">
-  <h2>Participations</h2>
+  <h2>Hackathons and Awards</h2>
 
   <div class="participation">
     <div class="participation-image">
