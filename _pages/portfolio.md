@@ -26,7 +26,7 @@ author_profile: true
 
   .participation-image {
     width: 170px;
-    height: 180px;
+    height: 170px;
     background-color: #f0f0f0;
     margin-right: 20px;
     flex-shrink: 0;
