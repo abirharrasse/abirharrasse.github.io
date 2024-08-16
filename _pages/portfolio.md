@@ -8,7 +8,7 @@ author_profile: true
 ## Participations
 
 <div style="display: flex; margin-bottom: 20px; align-items: stretch;">
-  <img src="https://github.com/abirharrasse/abirharrasse.github.io/images/BCG_hack.JPG" alt="BCG Hackathon Participation" style="width: 200px; object-fit: cover; margin-right: 20px;">
+  <img src="https://abirharrasse.github.io/images/photo_abir.jpeg" alt="BCG Hackathon Participation" style="width: 200px; object-fit: cover; margin-right: 20px;">
   <div style="display: flex; flex-direction: column; justify-content: space-between;">
     <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
     <p><small><strong>Abir HARRASSE</strong>, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</small></p>
