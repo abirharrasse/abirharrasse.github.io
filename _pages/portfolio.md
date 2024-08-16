@@ -8,12 +8,12 @@ author_profile: true
 ## Participations
 
 <div style="display: flex; margin-bottom: 20px; align-items: stretch;">
-  <img src="https://abirharrasse.github.io/images/photo_abir.jpeg" alt="BCG Hackathon Participation" style="width: 200px; object-fit: cover; margin-right: 20px;">
+  <img src="https://abirharrasse.github.io/images/BCG_hack.png" alt="BCG Hackathon Participation" style="width: 200px; object-fit: cover; margin-right: 20px;">
   <div style="display: flex; flex-direction: column; justify-content: space-between;">
     <h3>BCG Platinion Hackathon: Libera - Perfect Match, Faster Dispatch</h3>
     <p style="font-size: 14px;"><strong>Abir HARRASSE</strong>, Doha JOUAY, Mountasser LABCHIRI, Ahmed MRABET</p>
     <p style="font-size: 14px;">A mobility solution designed for informal sector inclusion and integration of regular drivers into the grocery store logistics loop, with a crisis component for events like Morocco's latest earthquake.</p>
-    <p style="font-size: 14px;"><em>First place nationally. Second place internationally.</em></p>
+    <p style="font-size: 14px;"><em><strong>First place nationally. Second place internationally.</strong></em></p>
     <a href="https://github.com/abirharrasse/abirharrasse.github.io/files/BCG_Platinion_Presentation.pdf">[Presentation]</a>
   </div>
 </div>
