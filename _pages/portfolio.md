@@ -48,16 +48,24 @@ author_profile: true
   .participation h3 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 18px; /* Smaller heading size */
   }
 
   .team-members {
     font-style: italic;
+    margin-bottom: 10px;
+    font-size: 14px; /* Smaller team members text */
+  }
+
+  .participation-content p {
+    font-size: 14px; /* Smaller paragraph text */
     margin-bottom: 10px;
   }
 
   .view-presentation {
     color: #0066cc;
     text-decoration: none;
+    font-size: 14px; /* Smaller link text */
   }
 
   .view-presentation:hover {
