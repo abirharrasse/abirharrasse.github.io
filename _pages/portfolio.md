@@ -5,8 +5,6 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-
-# Portfolio
 ## Projects
 
 ### Project Title 1
