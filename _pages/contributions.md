@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Contributions"
-permalink: /contributions/
+permalink: /Contributions/
 author_profile: true
 ---
 
