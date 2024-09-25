@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am a final year (5th year) engineering student at [**EMINES School of Industrial Management**](https://www.emines-ingenieur.org/), majoring in Data Science. My research interests focus on designing next-generation AI algorithms capable of reasoning. I'm particularly intrigued by the development of more efficient and intelligent AI systems, with a secondary interest in their applications to medicine, including drug discovery and medical diagnosis.  
+I am a final year (5th year) engineering student at [**EMINES School of Industrial Management**](https://www.emines-ingenieur.org/), majoring in Data Science. My research interests lie in the design of next-generation AI algorithms that possess advanced reasoning capabilities. I am especially fascinated by the development of more efficient and intelligent AI systems, as well as interpretability methods that enhance our understanding of large language models (LLMs).  
 Currently, I'm exploring novel evaluation frameworks for Large Language Models (LLMs). Inspired by social, economic, and voting theories, the goal is to create human-like accurate yet cost-effective assessment methods. In summer 2023, I interned at [**Africa Business School**](https://abs.um6p.ma/), supervised by [Agnès Gorge](https://abs.um6p.ma/professors_permanent/agnes-gorge/), working on assortment optimization for major Moroccan retailers like Marjane.  
 
 
