@@ -106,7 +106,7 @@ author_profile: true
     <h2>Relevant Projects</h2>
     <div class="participation">
     <div class="participation-image">
-        <img src="https://abirharrasse.github.io/images/kg_project.png" alt="Knowledge Graph Construction Project">
+        <img src="https://abirharrasse.github.io/images/kg.png" alt="Knowledge Graph Construction Project">
     </div>
     <div class="participation-content">
         <h3>Knowledge Graph Construction with LLMs</h3>
