@@ -103,5 +103,24 @@ author_profile: true
       <a href="https://github.com/MoroccoAI/2023-GenAI-Hackathon/tree/main/SehhaTech" class="view-presentation" target="_blank">[Presentation and Code]</a>
     </div>
   </div>
-    <h2>Projects</h2>
+    <h2>Relevant Projects</h2>
+    <div class="participation">
+    <div class="participation-image">
+        <img src="https://abirharrasse.github.io/images/kg_project.png" alt="Knowledge Graph Construction Project">
+    </div>
+    <div class="participation-content">
+        <h3>Knowledge Graph Construction with LLMs</h3>
+        <p>This project explores methods for leveraging LLMs to construct Knowledge Graphs (KGs) and perform accurate Question Answering (QA). We focus on refining KG extraction techniques and evaluate the trade-offs between KGs and vector databases for knowledge storage and querying. Additionally, we investigate approaches for tracking the origin of facts used in KG creation.</p>
+        <p><strong>Project Features:</strong></p>
+        <ul>
+            <li>Contextual KG Construction: Chunking and Fact Extraction</li>
+            <li>Effect of Few-Shot Prompting</li>
+            <li>Fine-Tuning for KG Formatting</li>
+            <li>Vector Databases vs KGs for QA</li>
+            <li>Source Tracking in QA</li>
+        </ul>
+        <a href="https://github.com/abirharrasse/LLM-Powered-Knowledge-Graphs-for-Question-Answering" class="view-presentation" target="_blank">[Github Repo]</a>
+    </div>
+</div>
+
 </div>
