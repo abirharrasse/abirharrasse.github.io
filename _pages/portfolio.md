@@ -111,14 +111,6 @@ author_profile: true
     <div class="participation-content">
         <h3>Knowledge Graph Construction with LLMs</h3>
         <p>This project explores methods for leveraging LLMs to construct Knowledge Graphs (KGs) and perform accurate Question Answering (QA). We focus on refining KG extraction techniques and evaluate the trade-offs between KGs and vector databases for knowledge storage and querying. Additionally, we investigate approaches for tracking the origin of facts used in KG creation.</p>
-        <p><strong>Project Features:</strong></p>
-        <ul>
-            <li>Contextual KG Construction: Chunking and Fact Extraction</li>
-            <li>Effect of Few-Shot Prompting</li>
-            <li>Fine-Tuning for KG Formatting</li>
-            <li>Vector Databases vs KGs for QA</li>
-            <li>Source Tracking in QA</li>
-        </ul>
         <a href="https://github.com/abirharrasse/LLM-Powered-Knowledge-Graphs-for-Question-Answering" class="view-presentation" target="_blank">[Github Repo]</a>
     </div>
 </div>
