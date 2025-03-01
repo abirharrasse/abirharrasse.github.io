@@ -22,7 +22,7 @@ I maintain **a blog on medium** where I share my insights on AI, and I actively 
 
 ### Recent news:
 
-- 📄 October 2024: Thrilled to share that our paper **"Adversarial Multi-Agent Evaluation of Large Language Models through Iterative Debates"** is now live on arXiv! This work, co-authored with Chaithanya Bandi and Hari Bandi, explores a novel framework for evaluating LLMs through multi-agent debates. Stay tuned for more updates as the paper is **under review**!
+- 📄 October 2024: Thrilled to share that our paper **"Adversarial Multi-Agent Evaluation of Large Language Models through Iterative Debates"** is now live on arXiv! This work, co-authored with Chaithanya Bandi, explores a novel framework for evaluating LLMs through multi-agent debates.
 - 🚀 September 2024: Excited to announce that I joined [**WithMartian**](https://blog.withmartian.com/), where I am currently focusing on LLM routing technology. This promising startup, founded in 2023, is already making waves in the AI industry by delivering significant value and ranking among the top 100 AI companies.
 - 🎉 April 2024: We're thrilled with the overwhelming success of the first edition of the [**Moroccan Day of Mathematics**](https://www.youtube.com/watch?v=3RsTD8BXCfQ). It’s incredibly rewarding to see an event I co-founded with my friends at Math&Maroc make such a meaningful impact.  
 - 🌟 March 2024: [**The Winter School**](https://midas.centrale-casablanca.net/winter-school-2024-generative-ai/index.html) featuring prominent AI researchers like Yann LeCun and Eric Xing and that I proudly coorganized took place.
