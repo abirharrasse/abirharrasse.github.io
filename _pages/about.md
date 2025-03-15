@@ -10,9 +10,9 @@ redirect_from:
 
 I am a final year (5th year) engineering student at [**EMINES School of Industrial Management**](https://www.emines-ingenieur.org/), minoring in Data Science. My research interests lie in the design of next-generation AI algorithms that possess advanced reasoning capabilities. I am especially fascinated by the development of more efficient and intelligent AI systems, as well as interpretability methods that enhance our understanding of large language models (LLMs).  
 
-Currently, I am concentrating on Mechanistic Interpretability in my research intern role at **WithMartian**, an innovative startup founded in 2023. WithMartian is tackling significant challenges in AI, including interpretability and **model mapping**.
+Currently, I am concentrating on Mechanistic Interpretability in my research intern role at [**WithMartian**](https://withmartian.com/), an innovative startup founded in 2023. WithMartian is tackling significant challenges in AI, including **interpretability** and model mapping.
 
-Previously, I explored novel **evaluation** frameworks for Large Language Models (LLMs). Drawing inspiration from social, economic, and voting theories, my goal was to develop human-like, accurate, and cost-effective assessment methods.
+Previously, I explored novel **evaluation** frameworks for Large Language Models (LLMs) during my internship at **NUS**. Drawing inspiration from social, economic, and voting theories, my goal was to develop human-like, accurate, and cost-effective assessment methods.
 
 In summer 2023, I interned at [**Africa Business School**](https://abs.um6p.ma/), supervised by [Agnès Gorge](https://abs.um6p.ma/professors_permanent/agnes-gorge/), working on assortment optimization for major Moroccan retailers like Marjane.  
 
