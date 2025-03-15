@@ -9,7 +9,7 @@ author_profile: true
 
 **[Activation Space Interventions Can Be Transferred Between Large Language Models](https://arxiv.org/abs/2503.04429)**\
 Narmeen Oozeer<sup>\*</sup>,Dhruv Nathawani<sup>\*</sup>,  Nirmalendu Prakash, Michael Lan, **Abir Harrasse**, Amirali Abdullah\
-**Research Preprint**\
+**Research Preprint (under review)**\
 [[arXiv]](https://arxiv.org/abs/2503.04429) [[Code]](https://github.com/withmartian/Closing-Backdoors-Via-Representation-Transfer)
 
 **[Adversarial Multi-Agent Evaluation of Large Language Models through Iterative Debates](https://arxiv.org/abs/2410.04663)**\
