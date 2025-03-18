@@ -7,6 +7,11 @@ author_profile: true
 
 *The publications listed in this section consist of reports and papers produced during my internship experiences.*
 
+**[TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research](https://arxiv.org/abs/2503.12730)**\
+Philip Quirke<sup>\*</sup>,Clement Neo<sup>\*</sup>,  **Abir Harrasse**<sup>\*</sup>, Dhruv Nathawani, Amir Abdullah\
+**Research Preprint (under review)**\
+[[arXiv]](https://arxiv.org/abs/2503.12730) [[Code]](https://arxiv.org/abs/2503.12730)
+
 **[Activation Space Interventions Can Be Transferred Between Large Language Models](https://arxiv.org/abs/2503.04429)**\
 Narmeen Oozeer<sup>\*</sup>,Dhruv Nathawani<sup>\*</sup>,  Nirmalendu Prakash, Michael Lan, **Abir Harrasse**, Amirali Abdullah\
 **Research Preprint (under review)**\
