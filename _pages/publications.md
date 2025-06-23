@@ -8,6 +8,7 @@ author_profile: true
 *The publications listed in this section consist of reports and papers produced during my internship experiences.*
 **[Disentangling and Steering Multilingual Representations: Layer-Wise Analysis and Cross-Lingual Control in Language Models
 ](https://drive.google.com/file/d/1GZeWBQlJYpQvmbmxad-RrQT0Ur8ccFKt/view?usp=sharing)**\
+ **Abir Harrasse**<sup>\*</sup>, Florent Draye<sup>\*</sup>, Bernhard Schölkopf, Zhijing Jin\
 **Research Preprint (ICML-AIW  Workshop)**\
 [[AIW Workshop]](https://drive.google.com/file/d/1GZeWBQlJYpQvmbmxad-RrQT0Ur8ccFKt/view?usp=sharing)
 **[TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research](https://arxiv.org/abs/2503.12730)**\
