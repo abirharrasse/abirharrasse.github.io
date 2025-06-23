@@ -19,6 +19,7 @@ In summer 2023, I interned at [**Africa Business School**](https://abs.um6p.ma/)
 I maintain **a blog on medium** where I share my insights on AI, and I actively participate in hackathons to craft innovative AI solutions. I won’t lie, I get a real thrill from winning them 😄.
 
 ### Recent news:
+- 🧠 June 2025 — Our paper "Disentangling and Steering Multilingual Representations: Layer-Wise Analysis and Cross-Lingual Control in Language Models" was accepted to the **Actionable Interpretability Workshop at ICML 2025**! We use sparse autoencoders to analyze multilingual features in Gemma2-2b, showing how early-layer steering improves Arabic reasoning and reveals non-English-dominated representations.
 - 🧪 April 2025: I’ve started a new research internship on mechanistic interpretability under the supervision of Zhijing Jin at the Max Planck Institute for Intelligent Systems in Tübingen! Excited to dive deeper into how LLMs work and how they can be aligned agaisnt inherent model bias.
 - 📄 March 2025: Excited to share our new paper **TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research** is now on arXiv! We introduce TinySQL as a benchmark and apply techniques like edge attribution and sparse autoencoders to identify circuits behind SQL generation.
 - 🔬 March 2025: Excited to see **"Activation Space Interventions Can Be Transferred Between Large Language Models"** out! I had a great time contributing to this project and learning from the team. It explores how safety interventions can transfer across models.
