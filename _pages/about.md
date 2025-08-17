@@ -18,7 +18,7 @@ In summer 2023, I interned at [**Africa Business School**](https://abs.um6p.ma/)
 
 
 ### Recent news:
-- 🗣️ August 2025: Gave a talk on Training Data Attribution methods at Amazon Tübingen!
+- 🗣️ August 2025: Gave a talk on Training Data Attribution methods at **Amazon Tübingen**!
 - 🧠 June 2025: Our paper "Disentangling and Steering Multilingual Representations: Layer-Wise Analysis and Cross-Lingual Control in Language Models" was accepted to the **Actionable Interpretability Workshop at ICML 2025**! 
 - 🧪 April 2025: I’ve started a new research internship on mechanistic interpretability under the supervision of Zhijing Jin at the Max Planck Institute for Intelligent Systems in Tübingen! Excited to dive deeper into how LLMs work and how they can be aligned agaisnt inherent model bias.
 - 📄 March 2025: Excited to share our new paper **TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research** is now on arXiv! We introduce TinySQL as a benchmark and apply techniques like edge attribution and sparse autoencoders to identify circuits behind SQL generation.
