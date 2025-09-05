@@ -9,7 +9,7 @@ author_profile: true
 **[Disentangling and Steering Multilingual Representations: Layer-Wise Analysis and Cross-Lingual Control in Language Models
 ](https://drive.google.com/file/d/1GZeWBQlJYpQvmbmxad-RrQT0Ur8ccFKt/view?usp=sharing)**\
  **Abir Harrasse**<sup>\*</sup>, Florent Draye<sup>\*</sup>, Bernhard Schölkopf, Zhijing Jin\
-**Research Preprint (ICML-AIW  Workshop)**\
+**Accepted to ICML-AIW  Workshop**\
 [[AIW Workshop]](https://drive.google.com/file/d/1GZeWBQlJYpQvmbmxad-RrQT0Ur8ccFKt/view?usp=sharing)
 
 **[TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research](https://arxiv.org/abs/2503.12730)**\
@@ -19,7 +19,7 @@ author_profile: true
 
 **[Activation Space Interventions Can Be Transferred Between Large Language Models](https://arxiv.org/abs/2503.04429)**\
 Narmeen Oozeer<sup>\*</sup>,Dhruv Nathawani<sup>\*</sup>,  Nirmalendu Prakash, Michael Lan, **Abir Harrasse**, Amirali Abdullah\
-**Research Preprint (ICML 2025)**\
+**Accepted to ICML 2025**\
 [[arXiv]](https://arxiv.org/abs/2503.04429) [[Code]](https://github.com/withmartian/Closing-Backdoors-Via-Representation-Transfer)
 
 
