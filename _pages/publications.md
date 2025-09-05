@@ -14,7 +14,7 @@ author_profile: true
 
 **[TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research](https://arxiv.org/abs/2503.12730)**\
  **Abir Harrasse**<sup>\*</sup>, Philip Quirke<sup>\*</sup>,Clement Neo<sup>\*</sup>, Dhruv Nathawani, Luke Marks, Amir Abdullah\
-**Research Preprint (under review)**\
+**Accepted to EMNLP 2025 (Main Conference)**\
 [[arXiv]](https://arxiv.org/abs/2503.12730) [[Code]](https://arxiv.org/abs/2503.12730)
 
 **[Activation Space Interventions Can Be Transferred Between Large Language Models](https://arxiv.org/abs/2503.04429)**\
