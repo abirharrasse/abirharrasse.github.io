@@ -15,7 +15,7 @@ Previously,I pursued a research internship in **mechanistic interpretability** u
 
 
 ### Recent news:
-🎓 September 2025: Defended my Master's thesis, "Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders", which was selected as the best thesis, and graduated with first-class honors!
+- 🎓 September 2025: Defended my Master's thesis, "Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders", which was selected as the best thesis, and graduated with first-class honors!
 - 🎉 August 2025: Our paper "TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research" was accepted to **the Main Conference at EMNLP 2025**!
 - 🗣️ August 2025: Gave a talk on Training Data Attribution methods at **Amazon Tübingen**!
 - 🧠 June 2025: Our paper "Disentangling and Steering Multilingual Representations: Layer-Wise Analysis and Cross-Lingual Control in Language Models" was accepted to the **Actionable Interpretability Workshop at ICML 2025**! 
