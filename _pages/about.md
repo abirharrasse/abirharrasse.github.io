@@ -8,13 +8,14 @@ redirect_from:
 ---
 
 
-I am a Research Fellow at [**Martian**](https://blog.withmartian.com/). My broad research interest goal lies in understanding Intelligence. My research focuses on making this understanding actionable by applying AI interpretability methods to dissect model behavior. I'm also starting to explore theories of generalization and uncertainty estimation to better understand why models fail and how this might be addressed.
+I am a Research Scientist at [**Martian Learning Inc.**](https://blog.withmartian.com/). My broad research interest goal lies in understanding Intelligence. My research focuses on making this understanding actionable by applying AI interpretability methods to dissect model behavior. I'm also starting to explore theories of generalization and uncertainty estimation to better understand why models fail and how this might be addressed.
 
 
-Previously,I pursued a research internship in **mechanistic interpretability** under the supervision of [Zhijing Jin](https://zhijing-jin.com/) at the **Max Planck Institute for Intelligent Systems**, where I work on understanding multilingual capabilities of LLMs as well as improving Training Data Attribution methods. Before that, I was introduced to Mechanistic Interpretability in my research intern role at [**Martian**](https://withmartian.com/), where I contributed to two research papers exploring novel circuit analysis techniques for LLMs. Additionally, I explored novel **evaluation** frameworks for LLMs during my internship at **NUS**, drawing on social, economic, and voting theories to develop human-like, accurate, and cost-effective assessment methods.
+Previously,I pursued a research internship in **mechanistic interpretability** under the supervision of [Zhijing Jin](https://zhijing-jin.com/) at the **Max Planck Institute for Intelligent Systems**, where I work on understanding multilingual capabilities of LLMs as well as improving Training Data Attribution methods. Before that, I was introduced to Mechanistic Interpretability in my research intern role at [**Martian Learning Inc**](https://withmartian.com/), where I contributed to two research papers exploring novel circuit analysis techniques for LLMs. Additionally, I explored novel **evaluation** frameworks for LLMs during my internship at **NUS**, drawing on social, economic, and voting theories to develop human-like, accurate, and cost-effective assessment methods.
 
 
 ### Recent news:
+- 🎉 November 2025: Started as a Research Scientist @ Martian Learning Inc.!
 - 🎓 September 2025: Defended my Master's thesis, "Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders", which was selected as the best thesis, and graduated with first-class honors!
 - 🎉 August 2025: Our paper "TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research" was accepted to **the Main Conference at EMNLP 2025**!
 - 🗣️ August 2025: Gave a talk on Training Data Attribution methods at **Amazon Tübingen**!
