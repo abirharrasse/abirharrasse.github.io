@@ -13,7 +13,9 @@ I am a Research Scientist at [**Martian Learning Inc.**](https://blog.withmartia
 
 Previously,I pursued a research internship in **mechanistic interpretability** under the supervision of [Zhijing Jin](https://zhijing-jin.com/) at the **Max Planck Institute for Intelligent Systems**, where I work on understanding multilingual capabilities of LLMs as well as improving Training Data Attribution methods. Before that, I was introduced to Mechanistic Interpretability in my research intern role at [**Martian Learning Inc**](https://withmartian.com/), where I contributed to two research papers exploring novel circuit analysis techniques for LLMs. Additionally, I explored novel **evaluation** frameworks for LLMs during my internship at **NUS**, drawing on social, economic, and voting theories to develop human-like, accurate, and cost-effective assessment methods.
 
-<p style="color:red; font-weight:bold;">Currently seeking PhD opportunities in Europe to start in Fall 2026 😊</p>
+<p style="color:red; font-weight:bold; font-size:0.9em;">
+Currently seeking PhD opportunities in Europe to start in Fall 2026 😊.
+</p>
 
 
 ### Recent news:
