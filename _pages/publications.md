@@ -7,6 +7,11 @@ author_profile: true
 
 *The publications listed in this section consist of reports and papers produced during my internship experiences.*
 
+**[Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders](https://arxiv.org/abs/2511.10840)**\
+ **Abir Harrasse**<sup>\*</sup>, Florent Drayee<sup>\*</sup>, Zhijing Jin, Bernhard Schölkopf\
+**Under Review**\
+[[arXiv]](https://arxiv.org/abs/2511.10840)
+
 **[TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research](https://arxiv.org/abs/2503.12730)**\
  **Abir Harrasse**<sup>\*</sup>, Philip Quirke<sup>\*</sup>,Clement Neo<sup>\*</sup>, Dhruv Nathawani, Luke Marks, Amir Abdullah\
 **Accepted to EMNLP 2025 (Main Conference)**\
