@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio — Abir Harrasse</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+/* ── LIGHT MODE ── */
+:root {
+  --bg:      #ffffff;
+  --bg2:     #f5e8e8;
+  --bg3:     #e8d0d0;
+  --tan:     #D96868;
+  --green:   #4C5C2D;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #2a1010;
+  --txm:     #3a2020;
+  --txl:     #7a5050;
+  --nav-bg:  rgba(255,255,255,0.96);
+  --shadow:  rgba(217,104,104,.13);
+}
+
+/* ── DARK MODE ── */
+[data-theme="dark"] {
+  --bg:      #0a0a0a;
+  --bg2:     #111111;
+  --bg3:     #1c1c1c;
+  --tan:     #D96868;
+  --green:   #6a7e3f;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #eeeae2;
+  --txm:     #c8c4b8;
+  --txl:     #8a9e8e;
+  --nav-bg:  #0a0a0a;
+  --shadow:  rgba(0,0,0,.35);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: 'Source Serif 4','Lora',Georgia,serif;
+  font-size: 16px; line-height: 1.7;
+  color: var(--tx); background: var(--bg);
+  max-width: 920px; margin: 0 auto; padding: 0 28px 20px;
+  transition: background .25s, color .25s;
+}
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0;
+  background: var(--nav-bg); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--bg2);
+  padding: 13px 28px; margin: 0 -28px;
+  z-index: 100; display: flex; align-items: center; flex-wrap: wrap;
+  transition: background .25s, border-color .25s;
+}
+nav a { font-family:'Lora',serif; font-size:15px; color:var(--txm); margin-right:22px; padding:2px 0; border-bottom:2px solid transparent; transition:color .2s,border-color .2s; }
+nav a.home { color:var(--green); font-weight:600; margin-right:32px; }
+nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decoration:none; }
+
+/* dark mode toggle button */
+#theme-btn {
+  margin-left: auto;
+  background: none; border: 1.5px solid var(--bg3);
+  border-radius: 20px; padding: 3px 10px;
+  cursor: pointer; font-size: 13px; color: var(--txl);
+  font-family: 'Lora',serif;
+  transition: all .2s;
+  display: flex; align-items: center; gap: 5px;
+}
+#theme-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+/* ── MAIN CONTENT ── */
+#bio-container {
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bio-section {
+  margin-bottom: 50px;
+}
+
+.bio-title {
+  font-family: 'Amiri', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid var(--bg2);
+}
+
+.bio-text {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--txm);
+  margin-bottom: 14px;
+}
+
+.bio-text strong {
+  color: var(--tx);
+}
+
+.bio-text a {
+  border-bottom: 1px dotted var(--tan);
+  transition: color .2s, border-color .2s;
+}
+
+.bio-text a:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+  text-decoration: none;
+}
+
+/* ── FOOTER ── */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid var(--bg2);
+  padding: 16px 0 12px;
+}
+.footer p {
+  font-size: 13px;
+  color: var(--txl);
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+@media(max-width:680px){
+  body { padding: 0 20px 20px; }
+  nav { padding: 13px 20px; margin: 0 -20px; }
+  .bio-title { font-size: 26px; }
+  .bio-text { font-size: 15px; }
+}
+</style>
+</head>
+<body id="page-top">
+
+<nav>
+  <a href="https://abirharrasse.github.io" class="home">Abir Harrasse</a>
+  <a href="https://abirharrasse.github.io#about">About</a>
+  <a href="https://abirharrasse.github.io#pubs">Publications</a>
+  <a href="https://abirharrasse.github.io#talks">Talks</a>
+  <a href="bio.html">Bio</a>
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark mode">
+    <span id="theme-icon">🌙</span> <span id="theme-label">dark</span>
+  </button>
+</nav>
+
+<div id="bio-container">
+  <!-- Professional Bio -->
+  <div class="bio-section">
+    <div class="bio-title">Bio</div>
+    <p class="bio-text">
+      Abir Harrasse completed a Master's degree at <strong>EMINES</strong> (first-class honors, best thesis award) with a minor in data science. She is currently a Research Scientist at <strong>Martian Learning Inc.</strong>, focused on mechanistic interpretability and LLM reasoning. Beginning Fall 2026, she will pursue a PhD at <strong>ETH Zürich</strong> under <strong>Prof. Mrinmaya Sachan</strong> and <strong>Prof. Bjoern Menze</strong>, supported by the ETH AI Center Doctoral Fellowship. Her research focuses on understanding how deep neural networks work, when they generalize, and how to make them more reliable and interpretable—with specific interests in AI reasoning, robustness, and mechanistic interpretability. Previously, she interned at the <strong>Max Planck Institute for Intelligent Systems</strong> under <a href="https://zhijing-jin.com/" target="_blank">Zhijing Jin</a> and <a href="https://is.mpg.de/~bs" target="_blank">Bernhard Schölkopf</a> on multilingual LLM representations, and at <strong>National University of Singapore</strong> on novel LLM evaluation frameworks.
+    </p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>Back to <a href="https://abirharrasse.github.io" style="color: var(--green); border-bottom: 1px dotted var(--tan);">main page</a></p>
+</div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  html.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateThemeButton(newTheme);
+}
+
+function updateThemeButton(theme) {
+  const btn = document.getElementById('theme-btn');
+  const icon = document.getElementById('theme-icon');
+  const label = document.getElementById('theme-label');
+  if (theme === 'dark') {
+    icon.textContent = '☀️';
+    label.textContent = 'light';
+  } else {
+    icon.textContent = '🌙';
+    label.textContent = 'dark';
+  }
+}
+
+// Load theme on page load
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateThemeButton(savedTheme);
+});
+</script>
+
+</body>
+</html>
