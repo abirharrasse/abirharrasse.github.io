@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theory of Generalization Reading Group · Abir Harrasse</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#ffffff; --bg2:#f5e8e8; --bg3:#e8d0d0; --tan:#D96868;
+  --green:#4C5C2D; --orange:#6a7e3f; --red:#C9182C; --red2:#782832;
+  --tx:#2a1010; --txm:#3a2020; --txl:#7a5050; --nav-bg:rgba(255,255,255,0.96);
+  --shadow:rgba(217,104,104,.13);
+}
+[data-theme="dark"] {
+  --bg:#0a0a0a; --bg2:#111111; --bg3:#1c1c1c; --tan:#D96868;
+  --green:#6a7e3f; --orange:#6a7e3f; --red:#C9182C; --red2:#782832;
+  --tx:#eeeae2; --txm:#c8c4b8; --txl:#8a9e8e; --nav-bg:#0a0a0a;
+  --shadow:rgba(0,0,0,.35);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Source Serif 4','Lora',Georgia,serif;
+  font-size:16px; line-height:1.7; color:var(--tx); background:var(--bg);
+  max-width:920px; margin:0 auto; padding:0 28px 20px;
+  transition:background .25s,color .25s;
+}
+a { color:var(--green); text-decoration:none; }
+a:hover { text-decoration:underline; }
+nav {
+  position:sticky; top:0; background:var(--nav-bg); backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--bg2); padding:13px 28px; margin:0 -28px;
+  z-index:100; display:flex; align-items:center; flex-wrap:wrap;
+}
+nav a { font-family:'Lora',serif; font-size:15px; color:var(--txm); margin-right:22px; padding:2px 0; border-bottom:2px solid transparent; }
+nav a.home { color:var(--green); font-weight:600; margin-right:32px; }
+nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decoration:none; }
+#theme-btn {
+  margin-left:auto; background:none; border:1.5px solid var(--bg3); border-radius:20px;
+  padding:3px 10px; cursor:pointer; font-size:13px; color:var(--txl); font-family:'Lora',serif;
+  display:flex; align-items:center; gap:5px;
+}
+#theme-btn:hover { border-color:var(--orange); color:var(--orange); }
+.hero { padding:52px 0 24px; border-bottom:1.5px solid var(--bg2); }
+.eyebrow { font-family:'Lora',serif; font-size:12px; font-weight:600; color:var(--txl); text-transform:uppercase; letter-spacing:.12em; margin-bottom:8px; }
+h1 { font-family:'Amiri',serif; font-size:46px; line-height:1.08; color:var(--green); margin-bottom:8px; }
+.subtitle { font-size:18px; color:var(--txm); max-width:760px; line-height:1.65; margin-bottom:14px; }
+.meta { font-size:14px; color:var(--txl); font-family:'Lora',serif; }
+.quicklinks { display:flex; gap:8px 16px; flex-wrap:wrap; margin-top:18px; font-size:14px; }
+.quicklinks a { border-bottom:1.5px solid var(--tan); padding-bottom:1px; color:var(--green); }
+.quicklinks a:hover { border-color:var(--orange); color:var(--orange); text-decoration:none; }
+h3.sec {
+  font-family:'Amiri',serif; font-size:26px; color:var(--green);
+  margin:42px 0 14px; padding-bottom:5px; border-bottom:1.5px solid var(--bg2);
+}
+p { color:var(--txm); margin-bottom:13px; font-size:15.5px; }
+.note { font-size:14px; color:var(--txl); }
+ul.clean { list-style:none; padding:3px 0; }
+ul.clean li { padding:4px 0 4px 18px; font-size:15.5px; color:var(--txm); position:relative; }
+ul.clean li::before { content:'◆'; position:absolute; left:0; top:8px; color:var(--orange); font-size:8px; }
+.card-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; }
+.card { border:1px solid var(--bg3); background:var(--bg); border-radius:6px; padding:15px 16px; box-shadow:0 2px 14px var(--shadow); }
+.card h4 { font-family:'Lora',serif; color:var(--tx); font-size:15px; margin-bottom:6px; }
+.card p, .card li { font-size:14.5px; color:var(--txm); }
+.schedule { width:100%; border-collapse:collapse; margin-top:12px; font-size:14.5px; }
+.schedule th { font-family:'Lora',serif; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--txl); text-align:left; padding:9px 8px; border-bottom:1.5px solid var(--bg3); }
+.schedule td { vertical-align:top; padding:13px 8px; border-bottom:1px solid var(--bg2); color:var(--txm); }
+.schedule .date { white-space:nowrap; color:var(--txl); font-family:'Lora',serif; font-size:13px; }
+.schedule .topic { font-family:'Lora',serif; font-weight:600; color:var(--tx); line-height:1.4; }
+.schedule .details { font-size:13.5px; color:var(--txl); margin-top:4px; line-height:1.55; }
+.schedule a { border-bottom:1px dotted var(--tan); }
+.next-topic { border:1px solid var(--bg3); background:var(--bg); border-radius:6px; padding:15px 16px; box-shadow:0 2px 14px var(--shadow); margin:10px 0 18px; }
+.next-topic .label { font-family:'Lora',serif; font-size:12px; font-weight:600; color:var(--txl); text-transform:uppercase; letter-spacing:.08em; margin-bottom:4px; }
+.next-topic .title { font-family:'Lora',serif; font-size:17px; font-weight:600; color:var(--tx); }
+.next-topic .info { font-size:14px; color:var(--txl); margin-top:3px; }
+.resource-link { color:var(--green); border-bottom:1px dotted var(--tan); }
+.tag { display:inline-block; font-family:'Lora',serif; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--red2); border:1px solid var(--bg3); border-radius:999px; padding:1px 7px; margin-bottom:4px; }
+.footer { margin-top:40px; text-align:center; border-top:1px solid var(--bg2); padding:16px 0 12px; }
+.footer p { font-size:13px; color:var(--txl); font-family:'Lora',serif; font-style:italic; }
+@media(max-width:720px){
+  h1{font-size:36px;} nav a{margin-right:14px;font-size:13px;} .card-grid{grid-template-columns:1fr;}
+  .schedule, .schedule thead, .schedule tbody, .schedule th, .schedule td, .schedule tr { display:block; }
+  .schedule thead { display:none; }
+  .schedule tr { border-bottom:1px solid var(--bg2); padding:10px 0; }
+  .schedule td { border-bottom:none; padding:4px 0; }
+}
+</style>
+</head>
+<body id="page-top">
+<nav>
+  <a href="index.html" class="home">Abir Harrasse</a>
+  <a href="#about">About</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#organizer">Organizer</a>
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark mode"><span id="theme-icon">🌙</span> <span id="theme-label">dark</span></button>
+</nav>
+
+<section class="hero" id="about">
+  <div class="eyebrow">Reading Group · Summer 2026</div>
+  <h1>Theory of Generalization Reading Group</h1>
+  <p class="subtitle">A reading group on why modern neural networks generalize despite overparameterization, interpolation, and their ability to fit random labels.</p>
+  <div class="quicklinks">
+    <a href="#schedule">Schedule</a>
+    <a href="#organizer">Organizer</a>
+    <a href="index.html">Back to homepage</a>
+  </div>
+</section>
+
+<h3 class="sec">Overview</h3>
+<p>This reading group asks why modern neural networks generalize despite being highly overparameterized, capable of fitting random labels, and often trained far beyond interpolation. We follow the story from classical statistical learning theory to the empirical puzzles that challenged it, including double descent and benign overfitting, then examine proposed explanations based on implicit bias, Bayesian and PAC-Bayes perspectives, compression, grokking, and sparse subnetworks.</p>
+<p>Across the sessions, the guiding question is: which parts of deep-learning generalization are now understood, and which phenomena still require new theory?</p>
+
+
+
+<h3 class="sec" id="schedule">Schedule</h3>
+<div class="next-topic">
+  <div class="label">Next topic</div>
+  <div class="title">Implicit Bias and Soft Inductive Biases</div>
+  <div class="info">24 Jun 2026 · Implicit regularization, SGD bias, simplicity preferences, and soft inductive biases.</div>
+</div>
+<p class="note">Schedule and readings may change as the group evolves. Slides and recordings will be added when available.</p>
+<table class="schedule">
+  <thead>
+    <tr><th>Date</th><th>Topic</th><th>Readings</th><th>Slides</th><th>Recording</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="date">03 Jun 2026</td>
+      <td><div class="topic">Classical theory of generalization</div><div class="details">VC dimension, Rademacher complexity, uniform convergence.</div></td>
+      <td><a href="https://github.com/ec2ainun/books-ML-and-DL/blob/master/understanding-machine-learning-theory-algorithms%20BY%20Shai%20Shalev-Shwartz%20and%20Shai%20Ben-David.pdf" target="_blank">Understanding Machine Learning</a>, Part I selections.</td>
+      <td class="slides"><a href="reading_group_pres/reading_group1.pdf" target="_blank">Slides</a></td>
+      <td class="recording"><span class="note">-</span></td>
+    </tr>
+    <tr>
+      <td class="date">10 Jun 2026</td>
+      <td><div class="topic">Understanding Deep Learning Requires Rethinking Generalization</div><div class="details">Random labels, interpolation, and whether VC dimension is the wrong notion of complexity.</div></td>
+      <td><a href="https://arxiv.org/abs/1611.03530" target="_blank">Zhang et al., 2017</a></td>
+      <td class="slides"><a href="reading_group_pres/reading_group2.pdf" target="_blank">Slides</a></td>
+      <td class="recording"><span class="note">-</span></td>
+    </tr>
+    <tr>
+      <td class="date">17 Jun 2026</td>
+      <td><div class="topic">Double Descent and Benign Overfitting</div><div class="details">Why can test error decrease again after interpolation?</div></td>
+      <td><a href="https://arxiv.org/abs/1812.11118" target="_blank">Reconciling modern machine-learning practice and the classical bias-variance trade-off</a></td>
+      <td class="slides"><a href="reading_group_pres/reading_group3.pdf" target="_blank">Slides</a></td>
+      <td class="recording"><span class="note">-</span></td>
+    </tr>
+    <tr>
+      <td class="date">24 Jun 2026</td>
+      <td><div class="topic">Implicit Bias and Soft Inductive Biases</div><div class="details">Implicit regularization, SGD bias, simplicity preferences, and soft inductive biases.</div></td>
+      <td><a href="https://arxiv.org/abs/1710.10345" target="_blank">Implicit Bias of Gradient Descent on Separable Data</a><br><a href="https://arxiv.org/abs/2002.08791" target="_blank">Bayesian Deep Learning and a Probabilistic Perspective of Generalization</a><br><a href="https://arxiv.org/abs/1803.05407" target="_blank">Averaging Weights Lead to Wider Optima and Better Generalization</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+      <td class="recording"><span class="note">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">01 Jul 2026</td>
+      <td><span class="tag">Tentative invited talk</span><div class="topic">Do LLMs actually generalize?</div><div class="details">PAC/VC bounds, overparameterization, compression, simplicity, and LLM generalization.</div></td>
+      <td><a href="https://arxiv.org/pdf/2312.17173" target="_blank">Non-Vacuous Generalization Bounds for Large Language Models</a><br><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/11715d433f6f8b9106baae0df023deb3-Paper-Conference.pdf" target="_blank">Unlocking tokens as data points for generalization bounds on larger language models</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+      <td class="recording"><span class="note">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">08 Jul 2026</td>
+      <td><div class="topic">Deep Learning Is Not So Mysterious or Different</div><div class="details">Which mysteries disappear under PAC-Bayes/compression viewpoints, and which remain?</div></td>
+      <td><a href="https://arxiv.org/abs/2503.02113" target="_blank">Deep Learning is Not So Mysterious or Different</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+      <td class="recording"><span class="note">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">15 Jul 2026</td>
+      <td><span class="tag">Open discussion</span><div class="topic">Grokking: Generalization Beyond Overfitting</div><div class="details">Does grokking support or challenge the view that deep learning is not so mysterious?</div></td>
+      <td><a href="https://arxiv.org/abs/2201.02177" target="_blank">Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</a><br><a href="https://arxiv.org/abs/2310.06110" target="_blank">Grokking as the Transition from Lazy to Rich Training Dynamics</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+      <td class="recording"><span class="note">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">22 Jul 2026</td>
+      <td><span class="tag">Tentative invited talk</span><div class="topic">Lottery Ticket Hypothesis</div><div class="details">Do neural networks succeed because training discovers sparse winning tickets?</div></td>
+      <td><a href="https://arxiv.org/abs/1803.03635" target="_blank">The Lottery Ticket Hypothesis</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+      <td class="recording"><span class="note">TBA</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="sec" id="organizer">Organizer</h3>
+<p>
+  Organized by <a href="index.html">Abir Harrasse</a> at the
+  <a href="https://zhijing-jin.com/home/" target="_blank">Jinesis AI Lab</a>,
+  University of Toronto.
+</p>
+
+<div class="footer">
+  <p>Theory of Generalization Reading Group · Summer 2026</p>
+</div>
+
+<script>
+function toggleTheme(){
+  const html=document.documentElement;
+  const isDark=html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  document.getElementById('theme-icon').textContent = isDark ? '🌙' : '☀️';
+  document.getElementById('theme-label').textContent = isDark ? 'dark' : 'light';
+}
+(function(){
+  const saved=localStorage.getItem('theme');
+  if(saved==='dark'){
+    document.documentElement.setAttribute('data-theme','dark');
+    window.addEventListener('DOMContentLoaded',()=>{
+      document.getElementById('theme-icon').textContent='☀️';
+      document.getElementById('theme-label').textContent='light';
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications - Abir Harrasse</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+/* ── LIGHT MODE ── */
+:root {
+  --bg:      #ffffff;
+  --bg2:     #f5e8e8;
+  --bg3:     #e8d0d0;
+  --tan:     #D96868;
+  --green:   #4C5C2D;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #2a1010;
+  --txm:     #3a2020;
+  --txl:     #7a5050;
+  --nav-bg:  rgba(255,255,255,0.96);
+  --shadow:  rgba(217,104,104,.13);
+}
+
+/* ── DARK MODE ── */
+[data-theme="dark"] {
+  --bg:      #0a0a0a;
+  --bg2:     #111111;
+  --bg3:     #1c1c1c;
+  --tan:     #D96868;
+  --green:   #6a7e3f;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #eeeae2;
+  --txm:     #c8c4b8;
+  --txl:     #8a9e8e;
+  --nav-bg:  rgba(10,10,10,0.97);
+  --shadow:  rgba(0,0,0,.35);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: 'Source Serif 4','Lora',Georgia,serif;
+  font-size: 16px; line-height: 1.7;
+  color: var(--tx); background: var(--bg);
+  max-width: 920px; margin: 0 auto; padding: 0 28px 20px;
+  transition: background .25s, color .25s;
+}
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0;
+  background: var(--nav-bg); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--bg2);
+  padding: 13px 28px; margin: 0 -28px;
+  z-index: 100; display: flex; align-items: center; flex-wrap: wrap;
+  transition: background .25s, border-color .25s;
+}
+nav a { font-family:'Lora',serif; font-size:15px; color:var(--txm); margin-right:22px; padding:2px 0; border-bottom:2px solid transparent; transition:color .2s,border-color .2s; }
+nav a.home { color:var(--green); font-weight:600; margin-right:32px; }
+nav a.current { color:var(--orange); border-bottom-color:var(--orange); }
+nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decoration:none; }
+nav .sep { color:var(--txl); margin-right:22px; }
+
+/* dark mode toggle button */
+#theme-btn {
+  margin-left: auto;
+  background: none; border: 1.5px solid var(--bg3);
+  border-radius: 20px; padding: 3px 10px;
+  cursor: pointer; font-size: 13px; color: var(--txl);
+  font-family: 'Lora',serif;
+  transition: all .2s;
+  display: flex; align-items: center; gap: 5px;
+}
+#theme-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+/* ── PAGE TITLE ── */
+.page-header {
+  margin: 48px 0 32px;
+}
+.page-header h1 {
+  font-family:'Amiri',serif; font-size:42px; color:var(--green);
+  font-weight:700; line-height:1.1; margin-bottom:8px;
+}
+.page-header p {
+  font-size:15.5px; color:var(--txm); line-height:1.7;
+}
+
+/* ── SECTION HEADERS ── */
+h3.sec {
+  font-family:'Amiri',serif; font-size:26px; color:var(--green);
+  margin:44px 0 14px; padding-bottom:5px; border-bottom:1.5px solid var(--bg2);
+}
+
+/* ── PUBLICATIONS ── */
+.pub-note { font-size:13px; color:var(--txl); margin-bottom:18px; }
+.pub-item { display:grid; grid-template-columns:150px 1fr; gap:20px; padding:20px 0; border-bottom:1px solid var(--bg2); align-items:start; }
+.pub-item:last-child { border-bottom:none; }
+.pub-thumb { width:150px; height:100px; border-radius:4px; border:1px solid var(--bg3); background:var(--bg2); flex-shrink:0; display:flex; align-items:center; justify-content:center; overflow:hidden; transition: background .25s; }
+.pub-thumb img { width:100%; height:100%; object-fit:cover; display:block; image-rendering:crisp-edges; }
+.pub-thumb-placeholder { font-size:11px; color:var(--txl); font-family:'Lora',serif; font-style:italic; text-align:center; padding:8px; line-height:1.4; }
+.pub-title { font-family:'Lora',serif; font-size:15px; font-weight:600; color:var(--tx); line-height:1.4; margin-bottom:4px; }
+.pub-title a { color:var(--tx); border-bottom:1px solid var(--bg2); }
+.pub-title a:hover { color:var(--green); text-decoration:none; border-color:var(--tan); }
+.pub-authors { font-size:13.5px; color:var(--txl); margin-bottom:2px; line-height:1.5; }
+.pub-authors strong { color:var(--green); }
+.pub-venue { font-size:13.5px; color:var(--txm); font-style:italic; margin-bottom:8px; }
+.pub-actions { display:flex; gap:12px; flex-wrap:wrap; align-items:center; font-size:13.5px; }
+.pub-actions a { color:var(--green); border-bottom:1px solid var(--tan); padding-bottom:1px; transition:color .2s,border-color .2s; }
+.pub-actions a:hover { color:var(--orange); border-color:var(--orange); text-decoration:none; }
+.toggle-btn { background:none; border:none; cursor:pointer; font-family:'Source Serif 4',serif; font-size:13.5px; color:var(--txl); border-bottom:1px dotted var(--bg3); padding:0; transition:color .2s; }
+.toggle-btn:hover { color:var(--orange); }
+.collapsible { max-height:0; overflow:hidden; transition:max-height .4s ease; }
+.collapsible.open { max-height:500px; }
+.collapsible p { margin-top:10px; font-size:14px; color:var(--txm); line-height:1.75; background:var(--bg2); padding:12px 14px; border-left:3px solid var(--tan); border-radius:0 4px 4px 0; }
+.collapsible pre { margin-top:10px; font-size:11px; color:var(--txl); background:var(--bg2); padding:12px 14px; border-left:3px solid var(--bg3); border-radius:0 4px 4px 0; overflow-x:auto; white-space:pre-wrap; font-family:'Courier New',monospace; line-height:1.6; }
+
+/* ── FOOTER ── */
+.footer { margin-top:40px; text-align:center; border-top:1px solid var(--bg2); padding: 16px 0 12px; }
+.footer p { font-size:13px; color:var(--txl); font-family:'Lora',serif; font-style:italic; }
+
+/* ── CAMEL ── */
+.camel-corner {
+  position: fixed;
+  bottom: 0; right: 0;
+  width: 140px;
+  z-index: 50;
+  pointer-events: auto;
+  cursor: pointer;
+  animation: camel-enter 2.2s cubic-bezier(.22,.8,.36,1) forwards;
+}
+.camel-ride {
+  width: 140px; height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+  animation: camel-bob 1.1s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+[data-theme="dark"] .camel-ride {
+  mix-blend-mode: normal;
+  filter: brightness(0.88);
+}
+@keyframes camel-enter {
+  from { transform: translateX(160px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@keyframes camel-bob {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  25%      { transform: translateY(-3px) rotate(0.4deg); }
+  75%      { transform: translateY(-1px) rotate(-0.3deg); }
+}
+
+@media(max-width:680px){
+  .pub-item{grid-template-columns:1fr;}
+  .pub-thumb{width:100%;height:110px;}
+  nav a{margin-right:14px;font-size:13px;}
+  .page-header h1{font-size:32px;}
+}
+</style>
+</head>
+<body id="page-top">
+
+<nav>
+  <a href="index.html" class="home">Abir Harrasse</a>
+  <a href="index.html#about">About</a>
+  <a href="publications.html" class="current">Publications</a>
+  <a href="index.html#talks">Talks</a>
+  <a href="index.html#news">News</a>
+  <span class="sep">|</span>
+  <a href="https://abirharrasse.github.io/files/cv/cv_harrasse.pdf" target="_blank">Vitae</a>
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark mode">
+    <span id="theme-icon">🌙</span> <span id="theme-label">dark</span>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Publications</h1>
+</div>
+
+<!-- PUBLICATIONS -->
+<h3 class="sec" id="pubs">Publications</h3>
+
+<p class="pub-note">See <a href="index.html#pubs">publications on the main page</a> or my <a href="https://scholar.google.com/citations?user=lnaBEG0AAAAJ" target="_blank">Google Scholar profile</a>.</p>
+
+<!-- Publication 1 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/sds_reasoning.png" alt="Reasoning Fine-Tuning paper figure">
+  </div>
+  <div>
+    <div class="pub-title">Reasoning Fine-Tuning Induces Persistent Latent Policy States</div>
+    <div class="pub-venue"><em>(Coming soon)</em></div>
+    <div class="pub-actions">
+      <span style="color:var(--txm); font-style:italic;">Link coming soon</span>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 2 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/visual_interface.png" alt="CLT-Forge paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://arxiv.org/pdf/2603.21014" target="_blank">CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs</a></div>
+    <div class="pub-authors">Florent Draye, <strong>Abir Harrasse</strong>, Vedant Palit, Tung-Yu Wu, Jiarui Liu, Punya Syon Pandey, Roderick Wu, Terry Jingchen Zhang, Zhijing Jin, Bernhard Schölkopf</div>
+    <div class="pub-venue"><em>arXiv:2603.21014</em></div>
+    <div class="pub-actions">
+      <a href="https://arxiv.org/pdf/2603.21014" target="_blank">Paper</a>
+      <a href="https://github.com/LLM-Interp/CLT-Forge" target="_blank">Code</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs2')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib2')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs2">
+      <p>Mechanistic interpretability seeks to understand how Large Language Models (LLMs) represent and process information. Recent approaches based on dictionary learning and transcoders enable representing model computation in terms of sparse, interpretable features and their interactions, giving rise to feature attribution graphs. However, these graphs are often large and redundant, limiting their interpretability in practice. Cross-Layer Transcoders (CLTs) address this issue by sharing features across layers while preserving layer-specific decoding, yielding more compact representations, but remain difficult to train and analyze at scale. We introduce an open-source library for end-to-end training and interpretability of CLTs. Our framework integrates scalable distributed training with model sharding and compressed activation caching, a unified automated interpretability pipeline for feature analysis and explanation, attribution graph computation using Circuit-Tracer, and a flexible visualization interface. This provides a practical and unified solution for scaling CLT-based mechanistic interpretability.</p>
+    </div>
+    <div class="collapsible" id="bib2">
+      <pre>@article{draye2026clt,
+  title={CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs},
+  author={Draye, Florent and Harrasse, Abir and Palit, Vedant and Wu, Tung-Yu and Liu, Jiarui and Pandey, Punya Syon and Wu, Roderick and Zhang, Terry Jingchen and Jin, Zhijing and Sch{\"o}lkopf, Bernhard},
+  journal={arXiv preprint arXiv:2603.21014},
+  year={2026}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 3 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/kpca_figure.png" alt="Curveball Steering paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://arxiv.org/pdf/2603.09313" target="_blank">Curveball Steering: The Right Direction To Steer Isn't Always Linear</a></div>
+    <div class="pub-authors">Shivam Raval, Hae Jin Song, Linlin Wu, <strong>Abir Harrasse</strong>, Jeff M. Phillips, Fazl Barez, Amirali Abdullah</div>
+    <div class="pub-venue"><em>arXiv:2603.09313</em></div>
+    <div class="pub-actions">
+      <a href="https://arxiv.org/pdf/2603.09313" target="_blank">Paper</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs3')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib3')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs3">
+      <p>Activation steering is a widely used approach for controlling large language model (LLM) behavior by intervening on internal representations. Existing methods largely rely on the Linear Representation Hypothesis, assuming behavioral attributes can be manipulated using global linear directions. In practice, however, such linear interventions often behave inconsistently. We question this assumption by analyzing the intrinsic geometry of LLM activation spaces. Measuring geometric distortion via the ratio of geodesic to Euclidean distances, we observe substantial and concept-dependent distortions, indicating that activation spaces are not well-approximated by a globally linear geometry. Motivated by this, we propose "Curveball steering", a nonlinear steering method based on polynomial kernel PCA that performs interventions in a feature space, better respecting the learned activation geometry. Curveball steering consistently outperforms linear PCA-based steering, particularly in regimes exhibiting strong geometric distortion, suggesting that geometry-aware, nonlinear steering provides a principled alternative to global, linear interventions.</p>
+    </div>
+    <div class="collapsible" id="bib3">
+      <pre>@article{raval2026curveball,
+  title={Curveball Steering: The Right Direction To Steer Isn't Always Linear},
+  author={Raval, Shivam and Song, Hae Jin and Wu, Linlin and Harrasse, Abir and Phillips, Jeff and Abdullah, Amirali},
+  journal={arXiv preprint arXiv:2603.09313},
+  year={2026}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 4 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/mclts_figure.png" alt="Tracing Multilingual Representations paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://arxiv.org/pdf/2511.10840" target="_blank">Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders</a></div>
+    <div class="pub-authors"><strong>Abir Harrasse</strong>, Florent Draye, Punya Syon Pandey, Zhijing Jin, Bernhard Schölkopf</div>
+    <div class="pub-venue"><em>arXiv:2511.10840</em></div>
+    <div class="pub-actions">
+      <a href="https://arxiv.org/pdf/2511.10840" target="_blank">Paper</a>
+      <a href="https://github.com/abirharrasse/MultilingualCLTs" target="_blank">Code</a>
+      <a href="https://huggingface.co/collections/CausalNLP/multilingual-clts" target="_blank">CLTs</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs4')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib4')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs4">
+      <p>Multilingual Large Language Models (LLMs) can process many languages, yet how they internally represent this diversity remains unclear. Do they form shared multilingual representations with language-specific decoding, and if so, why does performance favor the dominant training language? To address this, we train models on different multilingual mixtures and analyze their internal mechanisms using Cross-Layer Transcoders (CLT) and Attribution Graphs. Our results reveal multilingual shared representations: the model employs highly similar features across languages, while language-specific decoding emerges in later layers. Training models without English shows identical multilingual shared space structures. Decoding relies partly on a small set of high-frequency features in the final layers, which linearly encode language identity from early layers. Intervening on these features allows one language to be suppressed and another substituted. Finally, to explain non-English failures, we perform a Model-Diffing experiment: underperformance arises from dim late-layer features, weak middle-layer clusters, and tokenizer bias toward English that forces early layers to specialize in word reassembly. Finetuning strengthens these features and their links, improving token assembly and language-specific decoding, providing a mechanistic explanation for multilingual gaps.</p>
+    </div>
+    <div class="collapsible" id="bib4">
+      <pre>@article{harrasse2025tracing,
+  title={Tracing multilingual representations in llms with cross-layer transcoders},
+  author={Harrasse, Abir and Draye, Florent and Pandey, Punya Syon and Jin, Zhijing and Sch{\"o}lkopf, Bernhard},
+  journal={arXiv preprint arXiv:2511.10840},
+  year={2025}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 5 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/d3_figure.png" alt="D3 Framework paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://aclanthology.org/2026.eacl-long.392.pdf" target="_blank">Debate, Deliberate, Decide (D3): A Cost-Aware Adversarial Framework for Reliable and Interpretable LLM Evaluation</a></div>
+    <div class="pub-authors"><strong>Abir Harrasse</strong>, Chaithanya Bandi, Hari Bandi</div>
+    <div class="pub-venue"><em>EACL (Oral), 2026</em></div>
+    <div class="pub-actions">
+      <a href="https://aclanthology.org/2026.eacl-long.392.pdf" target="_blank">Paper</a>
+      <a href="https://github.com/abirharrasse/D3-Judge" target="_blank">Code</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs5')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib5')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs5">
+      <p>The evaluation of Large Language Models (LLMs) remains challenging due to inconsistency, bias, and the absence of transparent decision criteria in automated judging. We present Debate, Deliberate, Decide (D3), a cost-aware, adversarial multi-agent framework that orchestrates structured debate among role-specialized agents (advocates, a judge, and an optional jury) to produce reliable and interpretable evaluations. D3 instantiates two complementary protocols: (1) Multi-Advocate One-Round Evaluation (MORE), which elicits k parallel defenses per answer to amplify signal via diverse advocacy, and (2) Single-Advocate Multi-Round Evaluation (SAMRE) with budgeted stopping, which iteratively refines arguments under an explicit token budget and convergence checks. We develop a probabilistic model of score gaps that (i) characterizes reliability and convergence under iterative debate and (ii) explains the separation gains from parallel advocacy. Under mild assumptions, the posterior distribution of the round-r gap concentrates around the true difference and the probability of misranking vanishes; moreover, aggregating across k advocates provably increases expected score separation. We complement theory with a rigorous experimental suite across MT-BENCH, ALIGNBENCH, and AUTO-J, showing state-of-the-art agreement with human judgments (accuracy and Cohen's κ), reduced positional and verbosity biases via anonymization and role diversification, and a favorable cost–accuracy frontier enabled by budgeted stopping. Ablations and qualitative analyses isolate the contributions of debate, aggregation, and anonymity. Together, these results establish D3 as a principled, practical recipe for reliable, interpretable, and cost-aware LLM evaluation.</p>
+    </div>
+    <div class="collapsible" id="bib5">
+      <pre>@inproceedings{harrasse2026debate,
+  title={Debate, deliberate, decide (d3): A cost-aware adversarial framework for reliable and interpretable llm evaluation},
+  author={Harrasse, Abir and Bandi, Chaithanya and Bandi, Hari},
+  booktitle={Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={8376--8392},
+  year={2026}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 6 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/steerinf_main.png" alt="STRIDE paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://openreview.net/pdf?id=FaZvqJOG1k" target="_blank">STRIDE: Training Data Attribution Can Be Estimated in Activation Space</a></div>
+    <div class="pub-authors"><strong>Abir Harrasse</strong>, Rishit Dagli, Amirali Abdullah, Zhijing Jin</div>
+    <div class="pub-venue"><em>3rd Data-FM Workshop @ ICLR 2026</em></div>
+    <div class="pub-actions">
+      <a href="https://openreview.net/pdf?id=FaZvqJOG1k" target="_blank">Paper</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs6')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib6')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs6">
+      <p>Understanding which training examples drive specific model behaviors is central to debugging failures, investigating safety issues, and auditing deployed systems. However, existing attribution methods operate in parameter space, where costs grow rapidly with model size. Approximations enable scaling, but introduce overhead that limits low-latency and scalable deployment. STRIDE is a scalable framework that estimates influence directly in activation space, bypassing explicit parameter interactions. STRIDE learns low-rank steering operators that approximate the effect of retraining on data subsets by shifting internal representations. We then recover per-example influence scores by solving a regularized regression problem that decomposes these subset-level shifts. Experiments show that STRIDE accurately identifies influential examples and detects data leakage, outperforming prior methods while being orders of magnitude faster and scalable.</p>
+    </div>
+    <div class="collapsible" id="bib6">
+      <pre>@article{harrasse2026stride,
+  title={STRIDE: Training data attribution can be estimated in activation space},
+  author={Harrasse, Abir and Dagli, Rishit and Abdullah, Amirali and Jin, Zhijing}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 7 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/tinysql_figure.png" alt="TinySQL paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://aclanthology.org/2025.emnlp-main.1489.pdf" target="_blank">TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research</a></div>
+    <div class="pub-authors"><strong>Abir Harrasse</strong>, Philip Quirke, Clement Neo, Dhruv Nathawani, Luke Marks, Amir Abdullah</div>
+    <div class="pub-venue"><em>EMNLP, 2025</em></div>
+    <div class="pub-actions">
+      <a href="https://aclanthology.org/2025.emnlp-main.1489.pdf" target="_blank">Paper</a>
+      <a href="https://abirharrasse.github.io/tinysql/" target="_blank">Website</a>
+      <a href="https://github.com/withmartian/TinySQL" target="_blank">Code</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs7')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib7')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs7">
+      <p>Mechanistic interpretability research faces a gap between analyzing simple circuits in toy tasks and discovering features in large models. To bridge this gap, we propose text-to-SQL generation as an ideal task to study, as it combines the formal structure of toy tasks with real-world complexity. We introduce TinySQL, a synthetic dataset, progressing from basic to advanced SQL operations, and train models ranging from 33M to 1B parameters to establish a comprehensive testbed for interpretability. We apply multiple complementary interpretability techniques, including Edge Attribution Patching and Sparse Autoencoders, to identify minimal circuits and components supporting SQL generation. We compare circuits for different SQL subskills, evaluating their minimality, reliability, and identifiability. Finally, we conduct a layerwise logit lens analysis to reveal how models compose SQL queries across layers: from intent recognition to schema resolution to structured generation. Our work provides a robust framework for probing and comparing interpretability methods in a structured, progressively complex setting.</p>
+    </div>
+    <div class="collapsible" id="bib7">
+      <pre>@inproceedings{harrasse2025tinysql,
+  title={TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research},
+  author={Harrasse, Abir and Quirke, Philip and Neo, Clement and Nathawani, Dhruv and Marks, Luke and Abdullah, Amir},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages={29244--29272},
+  year={2025}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<!-- Publication 8 -->
+<div class="pub-item">
+  <div class="pub-thumb">
+    <img src="paper_images/active_transfer.png" alt="Activation Space Interventions paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://openreview.net/forum?id=HXOicJsmMQ" target="_blank">Activation Space Interventions Can Be Transferred Between Large Language Models</a></div>
+    <div class="pub-authors">Narmeen Fatimah Oozeer, Dhruv Nathawani, Nirmalendu Prakash, Michael Lan, <strong>Abir Harrasse</strong>, Amir Abdullah</div>
+    <div class="pub-venue"><em>ICML, 2025</em></div>
+    <div class="pub-actions">
+      <a href="https://openreview.net/forum?id=HXOicJsmMQ" target="_blank">Paper</a>
+      <a href="https://github.com/withmartian/Closing-Backdoors-Via-Representation-Transfer" target="_blank">Code</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs8')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib8')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs8">
+      <p>The study of representation universality in AI models reveals growing convergence across domains, modalities, and architectures. However, the practical applications of representation universality remain largely unexplored. We bridge this gap by demonstrating that safety interventions can be transferred between models through learned mappings of their shared activation spaces. We demonstrate this approach on two well-established AI safety tasks: backdoor removal and refusal of harmful prompts, showing successful transfer of steering vectors that alter the models' outputs in a predictable way. Additionally, we propose a new task, corrupted capabilities, where models are fine-tuned to embed knowledge tied to a backdoor. This tests their ability to separate useful skills from backdoors, reflecting real-world challenges. Extensive experiments across Llama, Qwen and Gemma model families show that our method enables using smaller models to efficiently align larger ones. Furthermore, we demonstrate that autoencoder mappings between base and fine-tuned models can serve as reliable "lightweight safety switches", allowing dynamic toggling between model behaviors.</p>
+    </div>
+    <div class="collapsible" id="bib8">
+      <pre>@inproceedings{oozeer2025activation,
+  title={Activation Space Interventions Can Be Transferred Between Large Language Models},
+  author={Oozeer, Narmeen Fatimah and Nathawani, Dhruv and Prakash, Nirmalendu and Lan, Michael and Harrasse, Abir and Abdullah, Amir},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=HXOicJsmMQ}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2026 Abir Harrasse. All rights reserved.</p>
+</div>
+
+<!-- CAMEL -->
+<img class="camel-corner" src="images/camel_icon.svg" alt="🐪">
+
+<script>
+// Theme toggle
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  updateThemeButton();
+}
+
+function updateThemeButton() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
+  document.getElementById('theme-label').textContent = isDark ? 'light' : 'dark';
+}
+
+// Load theme preference
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+updateThemeButton();
+
+// Toggle collapsible sections
+function tog(btn, id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+  btn.textContent = el.classList.contains('open') ? 'Hide' : (id.startsWith('a') ? 'Abstract' : 'BibTeX');
+}
+</script>
+
+</body>
+</html>

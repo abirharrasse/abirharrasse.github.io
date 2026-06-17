@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun — Abir Harrasse</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+
+<script>MathJax = { tex: { inlineMath: [['$','$']] } };</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<style>
+:root {
+  --bg:      #ffffff;
+  --bg2:     #f5e8e8;
+  --bg3:     #e8d0d0;
+  --tan:     #D96868;
+  --green:   #4C5C2D;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #2a1010;
+  --txm:     #3a2020;
+  --txl:     #7a5050;
+  --nav-bg:  rgba(255,255,255,0.96);
+  --shadow:  rgba(217,104,104,.13);
+}
+
+[data-theme="dark"] {
+  --bg:      #0a0a0a;
+  --bg2:     #111111;
+  --bg3:     #1c1c1c;
+  --tan:     #D96868;
+  --green:   #6a7e3f;
+  --orange:  #6a7e3f;
+  --red:     #C9182C;
+  --red2:    #782832;
+  --tx:      #eeeae2;
+  --txm:     #c8c4b8;
+  --txl:     #8a9e8e;
+  --nav-bg:  #0a0a0a;
+  --shadow:  rgba(0,0,0,.35);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: 'Source Serif 4','Lora',Georgia,serif;
+  font-size: 16px; line-height: 1.7;
+  color: var(--tx); background: var(--bg);
+  max-width: 920px; margin: 0 auto; padding: 0 28px 20px;
+  transition: background .25s, color .25s;
+}
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+nav {
+  position: sticky; top: 0;
+  background: var(--nav-bg); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--bg2);
+  padding: 13px 28px; margin: 0 -28px;
+  z-index: 100; display: flex; align-items: center; flex-wrap: wrap;
+  transition: background .25s, border-color .25s;
+}
+nav a { font-family:'Lora',serif; font-size:15px; color:var(--txm); margin-right:22px; padding:2px 0; border-bottom:2px solid transparent; transition:color .2s,border-color .2s; }
+nav a.home { color:var(--green); font-weight:600; margin-right:32px; }
+nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decoration:none; }
+
+#theme-btn {
+  margin-left: auto;
+  background: none; border: 1.5px solid var(--bg3);
+  border-radius: 20px; padding: 3px 10px;
+  cursor: pointer; font-size: 13px; color: var(--txl);
+  font-family: 'Lora',serif;
+  transition: all .2s;
+  display: flex; align-items: center; gap: 5px;
+}
+#theme-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+h3.sec {
+  font-family:'Amiri',serif; font-size:26px; color:var(--green);
+  margin:44px 0 14px; padding-bottom:5px; border-bottom:1.5px solid var(--bg2);
+}
+
+.page-intro {
+  padding: 48px 0 0;
+  margin-bottom: 4px;
+}
+.page-intro h1 {
+  font-family:'Amiri',serif; font-size:38px; font-weight:700; color:var(--tx);
+  line-height:1.15; margin-bottom:10px;
+}
+.page-intro p {
+  font-size:15.5px; line-height:1.78; color:var(--txm); margin-bottom:13px;
+}
+.page-intro p a { border-bottom:1px dotted var(--tan); }
+.page-intro p a:hover { text-decoration:none; border-color:var(--orange); color:var(--orange); }
+
+.section-body p {
+  font-size:15.5px; line-height:1.78; color:var(--txm); margin-bottom:13px;
+}
+.section-body p:last-child { margin-bottom:0; }
+.section-body p a { border-bottom:1px dotted var(--tan); }
+.section-body p a:hover { text-decoration:none; border-color:var(--orange); color:var(--orange); }
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid var(--bg2);
+  padding: 16px 0;
+  font-size: 13px;
+  color: var(--txl);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="https://abirharrasse.github.io" class="home">Abir Harrasse</a>
+  <a href="bio.html">Bio</a>
+  <a href="fun.html">Fun</a>
+  <button id="theme-btn" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<div class="page-intro">
+  <h1>About me (off the record)</h1>
+</div>
+
+<h3 class="sec">Reading & Writing</h3>
+<div class="section-body">
+  <p>I <a href="https://medium.com/@atesbocegi" target="_blank">write occasionally</a>, though my writings very rarely make it online. <a href="https://www.goodreads.com/review/list/125447070?shelf=read" target="_blank">I used to read a lot</a> and watch less. Under a bad influence I reversed the pattern, and now <a href="https://letterboxd.com/aboura19/diary/" target="_blank">I watch more than I read.</a></p>
+
+  <p>I also inherited the habit of watching Turkish series from our family gatherings on weekends. I kept watching more of them on my own, and I learned Turkish thanks to this. But I noticed something: this shift reduces my mental context window. I already quit all social media to fix this, and I'm working on replacing most of the watching with books again.</p>
+</div>
+
+<h3 class="sec">Curiosity</h3>
+<div class="section-body">
+  <p>I'm curious about a lot of things in life: from the tiniest customs and sayings in Morocco, where I can get very peculiar about finding the origin of something, all the way to science in general. Mathematics came naturally because I could build intuition around concepts. That skill never transferred to physics, but I kept returning to it anyway.</p>
+
+  <p>In 2020 I spent hours reading books and watching Neil deGrasse Tyson on particle physics and astrophysics. During my engineering degree I also took General Relativity and Quantum Computing, and built $\varepsilon$-non-trivial intuitions for both later on.</p>
+
+  <p>Lately I'm more drawn to biology (or what I call inner space). The brain is a beautiful puzzle to me, mostly because I'm wrestling with the intelligence question. I'm also a huge admirer of humanities: how complicated and intelligently made we are as a species, yet how much we rely on simple patterns in our day to day lives. I'm also very much drawn to theology and I very much enjoyed reading <a href="https://www.goodreads.com/book/show/6646964?ref=rae_1" target="_blank">this very historically loaded book</a> lately that gave me so much material to look up and think about.</p>
+</div>
+
+<h3 class="sec">How I tend to be</h3>
+<div class="section-body">
+  <p>I have huge respect for humble people. I try to be one, and if you're one, I'd definitely enjoy your company by default.</p>
+
+  <p>I also don't like to subscribe to an idea or paradigm for too long. You'll always find me exploring new stuff and criticizing previous stuff I did. Not sure if this is a good thing. I hope I'll converge to something I can stay with for very long (or not 😉).</p>
+  <p>When I'm at home in Morocco I very much like staying home. When I'm not at home, I generally prefer getting out or hanging out with friends. I also cook well but rarely, as I identify as a lazy person.</p>
+</div>
+
+<h3 class="sec">Study notes & writing</h3>
+<div class="section-body">
+  <p>My notes are usually unstructured. But I found that publishing them might be a good reward system to get them structured. So I'm building a space for that. Coming soon.</p>
+
+  <p>Also: even from a country very well known for its tea, I don't drink tea... Or coffee.</p>
+</div>
+
+<div class="footer">
+  Back to <a href="https://abirharrasse.github.io">main page</a>
+</div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const t = html.getAttribute("data-theme");
+  html.setAttribute("data-theme", t === "light" ? "dark" : "light");
+}
+</script>
+
+</body>
+</html>
