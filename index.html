@@ -49,8 +49,9 @@ body {
   color: var(--tx); background: var(--bg);
   max-width: 920px; margin: 0 auto; padding: 0 28px 20px;
   transition: background .25s, color .25s;
+  overflow-x: hidden;
 }
-a { color: var(--green); text-decoration: none; }
+a { color: var(--green); text-decoration: none; overflow-wrap: anywhere; }
 a:hover { text-decoration: underline; }
 
 /* ── NAV ── */
@@ -256,12 +257,27 @@ h3.sec {
 }
 
 @media(max-width:680px){
-  #about{grid-template-columns:1fr;}
-  .bio-left{flex-direction:row;align-items:flex-start;}
-  .photo-wrap{width:110px;height:110px;flex-shrink:0;}
-  .pub-thumb{width:100%;height:110px;}
-  nav a{margin-right:14px;font-size:13px;}
-  .bio-right h1{font-size:36px;}
+  body{padding:0 18px 18px;}
+  nav{padding:10px 18px; margin:0 -18px; gap:8px 14px; align-items:center;}
+  nav a{margin-right:0;font-size:13px;}
+  nav a.home{margin-right:0; flex-basis:100%; font-size:15px;}
+  nav .sep{display:none;}
+  #theme-btn{margin-left:0; padding:2px 9px;}
+  #about{grid-template-columns:1fr; gap:24px; padding:32px 0 10px;}
+  .bio-left{flex-direction:column;align-items:center;}
+  .photo-wrap{width:132px;height:132px;flex-shrink:0;}
+  .contact-email{font-size:13px; overflow-wrap:anywhere;}
+  .bio-right h1{font-size:38px;}
+  .bio-right h1 .arabic-name{font-size:32px;}
+  h3.sec{font-size:24px; margin-top:34px;}
+  .pub-item{grid-template-columns:1fr; gap:10px; padding:18px 0;}
+  .pub-thumb{width:100%; max-width:260px; height:auto; aspect-ratio:3 / 2;}
+  .pub-actions{gap:8px 12px;}
+  .talk-item{align-items:flex-start; flex-direction:column; gap:2px;}
+  .blog-list li{display:block;}
+  .blog-date{display:block; min-width:0; margin-bottom:2px;}
+  .camel-corner{width:86px;}
+  .camel-ride{width:86px;}
 }
 </style>
 </head>
@@ -301,7 +317,7 @@ h3.sec {
         <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
-  <p class="contact-email">aharrasse🌸cs.toronto.edu</p>
+  <p class="contact-email">aharrasse@ethz.ch</p>
   <p class="social-links">
     <a href="/files/cv/cv_harrasse.pdf" target="_blank">Vitae</a> ⋅
     <a href="bio.html">Bio</a> ⋅
@@ -314,11 +330,11 @@ h3.sec {
     <h1>Abir Harrasse<span class="arabic-name">عبير الهراس</span></h1>
     <p class="phonetic">/ʕæˈbiːr hɑˈrɑːs/</p>
 
-    <p><span class="hello">Hello!</span> I'm a Research Scientist at <a href="https://withmartian.com" target="_blank"><strong>Martian Learning Inc.</strong></a> working on mechanistic interpretability and LLM reasoning. I'm drawn to understanding intelligence through deep neural networks - how they work, when they generalize, and how to make them reliable.</p>
+    <p><span class="hello">Hello!</span> I'm a PhD student at <a href="https://inf.ethz.ch" target="_blank"><strong>ETH Zurich</strong></a> (D-INFK), working on mechanistic interpretability, LLM reasoning, and reliable deep learning. I'm drawn to understanding intelligence through deep neural networks - how they work, when they generalize, and how to make them reliable.</p>
 
-    <p>Starting Fall 2026, I'll pursue a PhD at <a href="https://inf.ethz.ch" target="_blank"><strong>ETH Zürich</strong></a> (D-INFK) with <a href="https://lre.inf.ethz.ch/" target="_blank">Prof. Mrinmaya Sachan</a> and <a href="https://www.dqbm.uzh.ch/en/research/menze.html" target="_blank">Prof. Bjoern Menze</a>, generously supported by the ETH AI Center Doctoral Fellowship. This is an incredible opportunity to dive deeper into understanding and improving deep neural networks.</p>
+    <p>I'm advised by <a href="https://lre.inf.ethz.ch/" target="_blank">Prof. Mrinmaya Sachan</a> and <a href="https://www.dqbm.uzh.ch/en/research/menze.html" target="_blank">Prof. Bjoern Menze</a>, and generously supported by the ETH AI Center Doctoral Fellowship. Before ETH, I was a Research Scientist at <a href="https://withmartian.com" target="_blank"><strong>Martian Learning Inc.</strong></a>, where I worked on mechanistic interpretability and LLM routing.</p>
 
-    <p>Before that, I was a research intern at <a href="https://is.mpg.de" target="_blank"><strong>MPI-IS Tübingen</strong></a> under <a href="https://zhijing-jin.com/" target="_blank">Zhijing Jin</a> and <a href="https://is.mpg.de/~bs" target="_blank">Bernhard Schölkopf</a>, where I worked on <a href="https://arxiv.org/abs/2511.10840" target="_blank">understanding multilingual representations in LLMs using cross-layer transcoders</a>. I also completed my Diplôme d'Ingénieur at <a href="https://www.emines-ingenieur.org/" target="_blank"><strong>EMINES</strong></a> (selected as best thesis, first-class honors), and interned at <strong>NUS</strong> where I developed <a href="#">novel evaluation frameworks for LLMs inspired by social choice and economic theory</a>. At <strong>Martian Learning Inc.</strong>, I co-authored research on LLM routing and <a href="https://arxiv.org/abs/2503.12730" target="_blank">mechanistic interpretability through the TinySQL benchmark</a>.</p>
+    <p>Before that, I was a research intern at <a href="https://is.mpg.de" target="_blank"><strong>MPI-IS Tübingen</strong></a> under <a href="https://zhijing-jin.com/" target="_blank">Zhijing Jin</a> and <a href="https://is.mpg.de/~bs" target="_blank">Bernhard Schölkopf</a>, where I worked on <a href="https://arxiv.org/abs/2511.10840" target="_blank">understanding multilingual representations in LLMs using cross-layer transcoders</a>. I also completed my Diplôme d'Ingénieur at <a href="https://www.emines-ingenieur.org/" target="_blank"><strong>EMINES</strong></a> (selected as best thesis, first-class honors), and interned at <strong>NUS</strong> where I developed <a href="#">novel evaluation frameworks for LLMs inspired by social choice and economic theory</a>.</p>
 
     <p style="font-size: 14px; color: var(--txl); margin-top: 20px;">I'm proudly <a href="#">Moroccan</a>. I've grown up across different parts of Morocco - Marrakech, then Elhajeb, Benguerir during my studies at EMINES, and now Tangier - each place leaving its mark on how I see the world. I love <a href="https://www.goodreads.com/review/list/125447070?shelf=read" target="_blank">reading</a> and am trying to rekindle the habit. I also write (mostly in French), sing in my spare time, and recently started learning photography, inspired by my father's wonderful tradition of making photo albums for us. I enjoy philosophizing about the world, whether alone or with my sister.</p>
 

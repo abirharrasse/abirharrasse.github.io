@@ -49,8 +49,9 @@ body {
   color: var(--tx); background: var(--bg);
   max-width: 920px; margin: 0 auto; padding: 0 28px 20px;
   transition: background .25s, color .25s;
+  overflow-x: hidden;
 }
-a { color: var(--green); text-decoration: none; }
+a { color: var(--green); text-decoration: none; overflow-wrap: anywhere; }
 a:hover { text-decoration: underline; }
 
 /* ── NAV ── */
@@ -136,8 +137,12 @@ nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decor
 }
 
 @media(max-width:680px){
-  body { padding: 0 20px 20px; }
-  nav { padding: 13px 20px; margin: 0 -20px; }
+  body { padding: 0 18px 18px; }
+  nav { padding: 10px 18px; margin: 0 -18px; gap: 8px 14px; }
+  nav a { margin-right: 0; font-size: 13px; }
+  nav a.home { margin-right: 0; flex-basis: 100%; font-size: 15px; }
+  #theme-btn { margin-left: 0; padding: 2px 9px; }
+  #bio-container { padding: 32px 0; }
   .bio-title { font-size: 26px; }
   .bio-text { font-size: 15px; }
 }
@@ -161,7 +166,7 @@ nav a:hover { color:var(--orange); border-bottom-color:var(--orange); text-decor
   <div class="bio-section">
     <div class="bio-title">Bio</div>
     <p class="bio-text">
-      Abir Harrasse completed a Diplôme d'Ingénieur from <strong>EMINES</strong> (first-class honors, best thesis award) with a minor in data science. She is currently a Research Scientist at <strong>Martian Learning Inc.</strong>, focused on interpretability and LLM reasoning. Beginning Fall 2026, she will pursue a PhD at <strong>ETH Zürich</strong> under <a href="https://lre.inf.ethz.ch/" target="_blank">Prof. Mrinmaya Sachan</a> and <a href="https://www.dqbm.uzh.ch/en/research/menze.html" target="_blank">Prof. Bjoern Menze</a>, supported by the ETH AI Center Doctoral Fellowship. Her research focuses on understanding how deep neural networks work, when they generalize, and how to make them more reliable and interpretable, with specific interests in AI reasoning, robustness, and interpretability. Previously, she interned at the <strong>Max Planck Institute for Intelligent Systems</strong> under <a href="https://zhijing-jin.com/" target="_blank">Zhijing Jin</a> and <a href="https://is.mpg.de/~bs" target="_blank">Bernhard Schölkopf</a> on multilingual LLM interpretability and training data attribution, and at <strong>the National University of Singapore</strong> on LLM evaluation frameworks.
+      Abir Harrasse is a PhD student at <strong>ETH Zurich</strong> (D-INFK), advised by <a href="https://lre.inf.ethz.ch/" target="_blank">Prof. Mrinmaya Sachan</a> and <a href="https://www.dqbm.uzh.ch/en/research/menze.html" target="_blank">Prof. Bjoern Menze</a>, and supported by the ETH AI Center Doctoral Fellowship. Her research focuses on understanding how deep neural networks work, when they generalize, and how to make them more reliable and interpretable, with specific interests in AI reasoning, robustness, and interpretability. Previously, she was a Research Scientist at <strong>Martian Learning Inc.</strong>, focused on mechanistic interpretability and LLM routing. She completed a Diplôme d'Ingénieur from <strong>EMINES</strong> (first-class honors, best thesis award) with a minor in data science, and interned at the <strong>Max Planck Institute for Intelligent Systems</strong> under <a href="https://zhijing-jin.com/" target="_blank">Zhijing Jin</a> and <a href="https://is.mpg.de/~bs" target="_blank">Bernhard Schölkopf</a> on multilingual LLM interpretability and training data attribution, and at <strong>the National University of Singapore</strong> on LLM evaluation frameworks.
     </p>
   </div>
 
