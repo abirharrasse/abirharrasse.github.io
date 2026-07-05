@@ -117,70 +117,68 @@ ul.clean li::before { content:'◆'; position:absolute; left:0; top:8px; color:v
 <h3 class="sec" id="schedule">Schedule</h3>
 <div class="next-topic">
   <div class="label">Next topic</div>
-  <div class="title">Implicit Bias and Soft Inductive Biases</div>
-  <div class="info">24 Jun 2026 · Implicit regularization, SGD bias, simplicity preferences, and soft inductive biases.</div>
+  <div class="title">Why Does Gradient Descent Generalize, and Why Can SGD Generalize Better?</div>
+  <div class="info">08 Jul 2026 · Generalization through stable minima, flat minima, and the noise-induced bias of SGD.</div>
 </div>
-<p class="note">Schedule and readings may change as the group evolves. Slides and recordings will be added when available.</p>
+<p class="note">Schedule and readings may change as the group evolves. Slides will be added when available.</p>
 <table class="schedule">
   <thead>
-    <tr><th>Date</th><th>Topic</th><th>Readings</th><th>Slides</th><th>Recording</th></tr>
+    <tr><th>Date</th><th>Topic</th><th>Readings</th><th>Slides</th></tr>
   </thead>
   <tbody>
     <tr>
       <td class="date">03 Jun 2026</td>
       <td><div class="topic">Classical theory of generalization</div><div class="details">VC dimension, Rademacher complexity, uniform convergence.</div></td>
       <td><a href="https://github.com/ec2ainun/books-ML-and-DL/blob/master/understanding-machine-learning-theory-algorithms%20BY%20Shai%20Shalev-Shwartz%20and%20Shai%20Ben-David.pdf" target="_blank">Understanding Machine Learning</a>, Part I selections.</td>
-      <td class="slides"><a href="reading_group_pres/reading_group1.pdf" target="_blank">Slides</a></td>
-      <td class="recording"><span class="note">-</span></td>
+      <td class="slides"><a href="reading_group_pres/20260603_reading_group.pdf" target="_blank">Slides</a></td>
     </tr>
     <tr>
       <td class="date">10 Jun 2026</td>
       <td><div class="topic">Understanding Deep Learning Requires Rethinking Generalization</div><div class="details">Random labels, interpolation, and whether VC dimension is the wrong notion of complexity.</div></td>
       <td><a href="https://arxiv.org/abs/1611.03530" target="_blank">Zhang et al., 2017</a></td>
       <td class="slides"><a href="reading_group_pres/reading_group2.pdf" target="_blank">Slides</a></td>
-      <td class="recording"><span class="note">-</span></td>
     </tr>
     <tr>
       <td class="date">17 Jun 2026</td>
       <td><div class="topic">Double Descent and Benign Overfitting</div><div class="details">Why can test error decrease again after interpolation?</div></td>
       <td><a href="https://arxiv.org/abs/1812.11118" target="_blank">Reconciling modern machine-learning practice and the classical bias-variance trade-off</a></td>
       <td class="slides"><a href="reading_group_pres/reading_group3.pdf" target="_blank">Slides</a></td>
-      <td class="recording"><span class="note">-</span></td>
     </tr>
     <tr>
       <td class="date">24 Jun 2026</td>
       <td><div class="topic">Implicit Bias and Soft Inductive Biases</div><div class="details">Implicit regularization, SGD bias, simplicity preferences, and soft inductive biases.</div></td>
       <td><a href="https://arxiv.org/abs/1710.10345" target="_blank">Implicit Bias of Gradient Descent on Separable Data</a><br><a href="https://arxiv.org/abs/2002.08791" target="_blank">Bayesian Deep Learning and a Probabilistic Perspective of Generalization</a><br><a href="https://arxiv.org/abs/1803.05407" target="_blank">Averaging Weights Lead to Wider Optima and Better Generalization</a></td>
       <td class="slides"><span class="note">TBA</span></td>
-      <td class="recording"><span class="note">TBA</span></td>
     </tr>
     <tr>
-      <td class="date">01 Jul 2026</td>
-      <td><span class="tag">Tentative invited talk</span><div class="topic">Do LLMs actually generalize?</div><div class="details">PAC/VC bounds, overparameterization, compression, simplicity, and LLM generalization.</div></td>
-      <td><a href="https://arxiv.org/pdf/2312.17173" target="_blank">Non-Vacuous Generalization Bounds for Large Language Models</a><br><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/11715d433f6f8b9106baae0df023deb3-Paper-Conference.pdf" target="_blank">Unlocking tokens as data points for generalization bounds on larger language models</a></td>
-      <td class="slides"><span class="note">TBA</span></td>
-      <td class="recording"><span class="note">TBA</span></td>
+      <td class="date">03 Jul 2026</td>
+      <td><div class="topic">Compression, Nonuniform Learnability, and PAC-Bayes</div><div class="details">Can compression and PAC-Bayes explain why deep networks generalize? Simple functions can occupy exponentially larger regions of parameter space, making them easier for learning algorithms to find and providing a compelling account of generalization in DNNs.</div></td>
+      <td><a href="https://arxiv.org/abs/1805.08522" target="_blank">A PAC-Bayesian Approach to Spectrally-Normalized Margin Bounds for Neural Networks</a></td>
+      <td class="slides"><a href="reading_group_pres/20260703_Reading_group.pdf" target="_blank">Slides</a></td>
     </tr>
     <tr>
       <td class="date">08 Jul 2026</td>
-      <td><div class="topic">Deep Learning Is Not So Mysterious or Different</div><div class="details">Which mysteries disappear under PAC-Bayes/compression viewpoints, and which remain?</div></td>
-      <td><a href="https://arxiv.org/abs/2503.02113" target="_blank">Deep Learning is Not So Mysterious or Different</a></td>
+      <td><div class="topic">Why Does Gradient Descent Generalize, and Why Can SGD Generalize Better?</div><div class="details">Generalization through stable minima: gradient-based methods can be biased toward stable, flat regions of the loss landscape, and flat minima are known to generalize well. We discuss how SGD noise may strengthen this bias relative to full-batch gradient descent.</div></td>
+      <td><a href="https://arxiv.org/abs/1509.01240" target="_blank">Train Faster, Generalize Better: Stability of Stochastic Gradient Descent</a><br><a href="https://arxiv.org/abs/1609.04836" target="_blank">On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima</a></td>
       <td class="slides"><span class="note">TBA</span></td>
-      <td class="recording"><span class="note">TBA</span></td>
     </tr>
     <tr>
       <td class="date">15 Jul 2026</td>
-      <td><span class="tag">Open discussion</span><div class="topic">Grokking: Generalization Beyond Overfitting</div><div class="details">Does grokking support or challenge the view that deep learning is not so mysterious?</div></td>
-      <td><a href="https://arxiv.org/abs/2201.02177" target="_blank">Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</a><br><a href="https://arxiv.org/abs/2310.06110" target="_blank">Grokking as the Transition from Lazy to Rich Training Dynamics</a></td>
+      <td><span class="tag">Tentative invited talk</span><div class="topic">Do LLMs actually generalize?</div><div class="details">PAC/VC bounds, overparameterization, compression, simplicity, and LLM generalization.</div></td>
+      <td><a href="https://arxiv.org/pdf/2312.17173" target="_blank">Non-Vacuous Generalization Bounds for Large Language Models</a><br><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/11715d433f6f8b9106baae0df023deb3-Paper-Conference.pdf" target="_blank">Unlocking tokens as data points for generalization bounds on larger language models</a></td>
       <td class="slides"><span class="note">TBA</span></td>
-      <td class="recording"><span class="note">TBA</span></td>
     </tr>
     <tr>
       <td class="date">22 Jul 2026</td>
+      <td><span class="tag">Open discussion</span><div class="topic">Grokking: Generalization Beyond Overfitting</div><div class="details">Does grokking support or challenge the view that deep learning is not so mysterious?</div></td>
+      <td><a href="https://arxiv.org/abs/2201.02177" target="_blank">Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</a><br><a href="https://arxiv.org/abs/2310.06110" target="_blank">Grokking as the Transition from Lazy to Rich Training Dynamics</a></td>
+      <td class="slides"><span class="note">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">29 Jul 2026</td>
       <td><span class="tag">Tentative invited talk</span><div class="topic">Lottery Ticket Hypothesis</div><div class="details">Do neural networks succeed because training discovers sparse winning tickets?</div></td>
       <td><a href="https://arxiv.org/abs/1803.03635" target="_blank">The Lottery Ticket Hypothesis</a></td>
       <td class="slides"><span class="note">TBA</span></td>
-      <td class="recording"><span class="note">TBA</span></td>
     </tr>
   </tbody>
 </table>
