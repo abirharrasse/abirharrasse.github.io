@@ -348,6 +348,33 @@ h3.sec {
 <!-- Publication 1 -->
 <div class="pub-item">
   <div class="pub-thumb">
+    <img src="paper_images/sds_reasoning.png" alt="Reasoning Fine-Tuning paper figure">
+  </div>
+  <div>
+    <div class="pub-title"><a href="https://arxiv.org/pdf/2607.18532" target="_blank">Reasoning Fine-Tuning Induces Persistent Latent Policy States</a></div>
+    <div class="pub-authors"><strong>Abir Harrasse</strong>, Michael Lan, Hunar Batra, Fateme Hashemi Chaleshtori, Chaithanya Bandi</div>
+    <div class="pub-venue"><em>arXiv:2607.18532 — COLM (accepted), 2026</em></div>
+    <div class="pub-actions">
+      <a href="https://arxiv.org/pdf/2607.18532" target="_blank">Paper</a>
+      <button class="toggle-btn" onclick="tog(this, 'abs0')">Abstract</button>
+      <button class="toggle-btn" onclick="tog(this, 'bib0')">BibTeX</button>
+    </div>
+    <div class="collapsible" id="abs0">
+      <p>Reasoning-specialized language models show large performance gains over base models, yet the internal changes responsible for improved multi-step reasoning remain poorly understood. We model chain-of-thought reasoning as a switching dynamical system (SDS) in which internal representations evolve under discrete latent policy states. Using time-aware contrastive representation learning and discrete regime discovery, we recover latent policies from activation trajectories. Across benchmarks and model scales from 1.5B to 32B, reasoning-fine-tuned models exhibit richer latent-policy organization than base models, with more differentiated transition structure and changes in state utilization, persistence, and mixing. The recovered regimes show functional specialization aligned with reasoning stages; causal interventions demonstrate their functional relevance, and SDS-guided pruning improves robustness. Together, these results suggest reasoning fine-tuning globally reorganizes latent dynamics, offering a new lens for mechanistic analysis and process-level control.</p>
+    </div>
+    <div class="collapsible" id="bib0">
+      <pre>@article{harrasse2026reasoning,
+  title={Reasoning Fine-Tuning Induces Persistent Latent Policy States},
+  author={Harrasse, Abir and Lan, Michael and Batra, Hunar and Chaleshtori, Fateme Hashemi and Bandi, Chaithanya},
+  journal={arXiv preprint arXiv:2607.18532},
+  year={2026}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<div class="pub-item">
+  <div class="pub-thumb">
     <img src="paper_images/stride_figure2.png" alt="STRIDE paper figure">
   </div>
   <div>
