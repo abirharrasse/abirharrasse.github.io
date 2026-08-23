@@ -273,7 +273,7 @@ h3.sec {
 <div id="about">
   <div class="bio-left">
     <div class="photo-wrap">
-      <img src="images/photo_abir.jpeg" alt="Abir Harrasse">
+      <img src="images/bio_cropped_large.jpeg" alt="Abir Harrasse">
     </div>
     <div class="social-row">
       <a href="https://scholar.google.com/citations?user=lnaBEG0AAAAJ" target="_blank" title="Google Scholar">
@@ -326,6 +326,7 @@ h3.sec {
   <div class="news-scroll-box" id="news-box">
     <p class="news-sub">News</p>
     <ul class="news-list">
+      <li><strong>2026-08</strong> Two papers were accepted to <strong>EMNLP 2026</strong>: <a href="https://arxiv.org/abs/2511.10840" target="_blank">Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders</a> and <a href="https://arxiv.org/abs/2603.21014" target="_blank">CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs</a> (System Demonstrations).</li>
       <li><strong>2026-07</strong> Our paper <a href="https://arxiv.org/abs/2607.18532" target="_blank">Reasoning Fine-Tuning Induces Persistent Latent Policy States</a> was accepted to the Conference on Language Modeling (COLM) 2026.</li>
       <li><strong>2026-06</strong> Running the <a href="generalization-reading-group.html">Theory of Generalization Reading Group</a> this summer.</li>
       <li><strong>2026-04</strong> Extremely honoured to have received the <strong>ETH AI Center Doctoral Fellowship</strong>!</li>
@@ -408,7 +409,7 @@ h3.sec {
   <div>
     <div class="pub-title"><a href="https://arxiv.org/pdf/2603.21014" target="_blank">CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs</a></div>
     <div class="pub-authors">Florent Draye, <strong>Abir Harrasse</strong>, Vedant Palit, Tung-Yu Wu, Jiarui Liu, Punya Syon Pandey, Roderick Wu, Terry Jingchen Zhang, Zhijing Jin, Bernhard Schölkopf</div>
-    <div class="pub-venue"><em>arXiv:2603.21014</em></div>
+    <div class="pub-venue"><em>EMNLP 2026 System Demonstrations</em></div>
     <div class="pub-actions">
       <a href="https://arxiv.org/pdf/2603.21014" target="_blank">Paper</a>
       <a href="https://github.com/LLM-Interp/CLT-Forge" target="_blank">Code</a>
@@ -419,10 +420,10 @@ h3.sec {
       <p>Mechanistic interpretability seeks to understand how Large Language Models (LLMs) represent and process information. Recent approaches based on dictionary learning and transcoders enable representing model computation in terms of sparse, interpretable features and their interactions, giving rise to feature attribution graphs. However, these graphs are often large and redundant, limiting their interpretability in practice. Cross-Layer Transcoders (CLTs) address this issue by sharing features across layers while preserving layer-specific decoding, yielding more compact representations, but remain difficult to train and analyze at scale. We introduce an open-source library for end-to-end training and interpretability of CLTs. Our framework integrates scalable distributed training with model sharding and compressed activation caching, a unified automated interpretability pipeline for feature analysis and explanation, attribution graph computation using Circuit-Tracer, and a flexible visualization interface. This provides a practical and unified solution for scaling CLT-based mechanistic interpretability.</p>
     </div>
     <div class="collapsible" id="bib2">
-      <pre>@article{draye2026clt,
+      <pre>@inproceedings{draye2026clt,
   title={CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs},
   author={Draye, Florent and Harrasse, Abir and Palit, Vedant and Wu, Tung-Yu and Liu, Jiarui and Pandey, Punya Syon and Wu, Roderick and Zhang, Terry Jingchen and Jin, Zhijing and Sch{\"o}lkopf, Bernhard},
-  journal={arXiv preprint arXiv:2603.21014},
+  booktitle={Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
   year={2026}
 }</pre>
     </div>
@@ -465,7 +466,7 @@ h3.sec {
   <div>
     <div class="pub-title"><a href="https://arxiv.org/pdf/2511.10840" target="_blank">Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders</a></div>
     <div class="pub-authors"><strong>Abir Harrasse</strong>, Florent Draye, Punya Syon Pandey, Zhijing Jin, Bernhard Schölkopf</div>
-    <div class="pub-venue"><em>arXiv:2511.10840</em></div>
+    <div class="pub-venue"><em>EMNLP 2026</em></div>
     <div class="pub-actions">
       <a href="https://arxiv.org/pdf/2511.10840" target="_blank">Paper</a>
       <a href="https://github.com/abirharrasse/MultilingualCLTs" target="_blank">Code</a>
@@ -477,11 +478,11 @@ h3.sec {
       <p>Multilingual Large Language Models (LLMs) can process many languages, yet how they internally represent this diversity remains unclear. Do they form shared multilingual representations with language-specific decoding, and if so, why does performance favor the dominant training language? To address this, we train models on different multilingual mixtures and analyze their internal mechanisms using Cross-Layer Transcoders (CLT) and Attribution Graphs. Our results reveal multilingual shared representations: the model employs highly similar features across languages, while language-specific decoding emerges in later layers. Training models without English shows identical multilingual shared space structures. Decoding relies partly on a small set of high-frequency features in the final layers, which linearly encode language identity from early layers. Intervening on these features allows one language to be suppressed and another substituted. Finally, to explain non-English failures, we perform a Model-Diffing experiment: underperformance arises from dim late-layer features, weak middle-layer clusters, and tokenizer bias toward English that forces early layers to specialize in word reassembly. Finetuning strengthens these features and their links, improving token assembly and language-specific decoding, providing a mechanistic explanation for multilingual gaps.</p>
     </div>
     <div class="collapsible" id="bib4">
-      <pre>@article{harrasse2025tracing,
+      <pre>@inproceedings{harrasse2026tracing,
   title={Tracing multilingual representations in llms with cross-layer transcoders},
   author={Harrasse, Abir and Draye, Florent and Pandey, Punya Syon and Jin, Zhijing and Sch{\"o}lkopf, Bernhard},
-  journal={arXiv preprint arXiv:2511.10840},
-  year={2025}
+  booktitle={Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year={2026}
 }</pre>
     </div>
   </div>
@@ -583,7 +584,7 @@ h3.sec {
 
 <div class="talk-item">
   <span class="talk-type">Talk</span>
-  <span><a href="https://xaiseminars.doc.ic.ac.uk/materials/2026-06-29_Jin.pdf" target="_blank">Towards a Causal Mechanistic Understanding of Language Models</a> (presented with Zhijing Jin, XAI Seminar @ Imperial)</span>
+  <span><a href="https://www.youtube.com/watch?v=DZob5Bgwn64" target="_blank">Towards a Causal Mechanistic Understanding of Language Models</a> (presented with Zhijing Jin, XAI Seminar @ Imperial)</span>
 </div>
 <div class="talk-item">
   <span class="talk-type">Talk</span>
