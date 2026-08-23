@@ -273,7 +273,7 @@ h3.sec {
 <div id="about">
   <div class="bio-left">
     <div class="photo-wrap">
-      <img src="images/bio_cropped_large.jpeg" alt="Abir Harrasse">
+      <img src="images/bio_cropped.jpeg" alt="Abir Harrasse">
     </div>
     <div class="social-row">
       <a href="https://scholar.google.com/citations?user=lnaBEG0AAAAJ" target="_blank" title="Google Scholar">
@@ -326,7 +326,7 @@ h3.sec {
   <div class="news-scroll-box" id="news-box">
     <p class="news-sub">News</p>
     <ul class="news-list">
-      <li><strong>2026-08</strong> Two papers were accepted to <strong>EMNLP 2026</strong>: <a href="https://arxiv.org/abs/2511.10840" target="_blank">Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders</a> and <a href="https://arxiv.org/abs/2603.21014" target="_blank">CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs</a> (System Demonstrations).</li>
+      <li><strong>2026-08</strong> 2 papers accepted at <strong>EMNLP 2026</strong>.</li>
       <li><strong>2026-07</strong> Our paper <a href="https://arxiv.org/abs/2607.18532" target="_blank">Reasoning Fine-Tuning Induces Persistent Latent Policy States</a> was accepted to the Conference on Language Modeling (COLM) 2026.</li>
       <li><strong>2026-06</strong> Running the <a href="generalization-reading-group.html">Theory of Generalization Reading Group</a> this summer.</li>
       <li><strong>2026-04</strong> Extremely honoured to have received the <strong>ETH AI Center Doctoral Fellowship</strong>!</li>
@@ -402,7 +402,7 @@ h3.sec {
 </div>
 
 <!-- Publication 2 -->
-<div class="pub-item">
+<div class="pub-item" data-publication="clt-forge">
   <div class="pub-thumb">
     <img src="paper_images/visual_interface.png" alt="CLT-Forge paper figure">
   </div>
@@ -459,7 +459,7 @@ h3.sec {
 </div>
 
 <!-- Publication 4 -->
-<div class="pub-item">
+<div class="pub-item" data-publication="tracing-multilingual">
   <div class="pub-thumb">
     <img src="paper_images/mclts_figure.png" alt="Tracing Multilingual Representations paper figure">
   </div>
@@ -623,6 +623,15 @@ h3.sec {
   <p>Copyright &copy; Abir Harrasse 2025&ndash;2026 &nbsp;&middot;&nbsp; Last updated June 2026</p>
 </div>
 <script>
+// Keep the newly accepted EMNLP papers at the top of the publication list.
+(() => {
+  const firstPublication = document.querySelector('.pub-item');
+  const tracing = document.querySelector('[data-publication="tracing-multilingual"]');
+  const cltForge = document.querySelector('[data-publication="clt-forge"]');
+  if (!firstPublication || !tracing || !cltForge) return;
+  firstPublication.before(tracing, cltForge);
+})();
+
 function toggleTheme() {
   const html = document.documentElement;
   const dark = html.getAttribute('data-theme') === 'dark';

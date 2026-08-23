@@ -218,7 +218,7 @@ h3.sec {
 </div>
 
 <!-- Publication 2 -->
-<div class="pub-item">
+<div class="pub-item" data-publication="clt-forge">
   <div class="pub-thumb">
     <img src="paper_images/visual_interface.png" alt="CLT-Forge paper figure">
   </div>
@@ -275,7 +275,7 @@ h3.sec {
 </div>
 
 <!-- Publication 4 -->
-<div class="pub-item">
+<div class="pub-item" data-publication="tracing-multilingual">
   <div class="pub-thumb">
     <img src="paper_images/mclts_figure.png" alt="Tracing Multilingual Representations paper figure">
   </div>
@@ -429,6 +429,15 @@ h3.sec {
 <img class="camel-corner" src="images/camel_icon.svg" alt="🐪">
 
 <script>
+// Keep the newly accepted EMNLP papers at the top of the publication list.
+(() => {
+  const firstPublication = document.querySelector('.pub-item');
+  const tracing = document.querySelector('[data-publication="tracing-multilingual"]');
+  const cltForge = document.querySelector('[data-publication="clt-forge"]');
+  if (!firstPublication || !tracing || !cltForge) return;
+  firstPublication.before(tracing, cltForge);
+})();
+
 // Theme toggle
 function toggleTheme() {
   const html = document.documentElement;
